@@ -19,6 +19,7 @@
 		00ECFD5E1CBB612E000C9D77 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ECFD5D1CBB612E000C9D77 /* Colors.swift */; };
 		00ECFD601CBB63B5000C9D77 /* Philosopher-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 00ECFD5F1CBB63B5000C9D77 /* Philosopher-Regular.ttf */; };
 		00ECFD651CBB6652000C9D77 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ECFD641CBB6652000C9D77 /* UILabelExtension.swift */; };
+		8B1D0C8232751533CCBDBB6E /* Pods_RoadYatri.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5837750431DFE917319818D9 /* Pods_RoadYatri.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,9 @@
 		00ECFD5D1CBB612E000C9D77 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		00ECFD5F1CBB63B5000C9D77 /* Philosopher-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Philosopher-Regular.ttf"; sourceTree = "<group>"; };
 		00ECFD641CBB6652000C9D77 /* UILabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		5257B912575D12BD1673A4C7 /* Pods-RoadYatri.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoadYatri.release.xcconfig"; path = "Pods/Target Support Files/Pods-RoadYatri/Pods-RoadYatri.release.xcconfig"; sourceTree = "<group>"; };
+		5837750431DFE917319818D9 /* Pods_RoadYatri.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoadYatri.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE8C683A9E3D5028699CA860 /* Pods-RoadYatri.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoadYatri.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RoadYatri/Pods-RoadYatri.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B1D0C8232751533CCBDBB6E /* Pods_RoadYatri.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +59,8 @@
 			children = (
 				00ECFD3B1CBB5550000C9D77 /* RoadYatri */,
 				00ECFD3A1CBB5550000C9D77 /* Products */,
+				8E448C7350632AB9FBFBCFA4 /* Pods */,
+				DF946FC808852EE1E6B8C069 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,6 +148,23 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		8E448C7350632AB9FBFBCFA4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE8C683A9E3D5028699CA860 /* Pods-RoadYatri.debug.xcconfig */,
+				5257B912575D12BD1673A4C7 /* Pods-RoadYatri.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DF946FC808852EE1E6B8C069 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5837750431DFE917319818D9 /* Pods_RoadYatri.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -148,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00ECFD4B1CBB5550000C9D77 /* Build configuration list for PBXNativeTarget "RoadYatri" */;
 			buildPhases = (
+				4387CB6B90A0F5CD9428E0C4 /* 📦 Check Pods Manifest.lock */,
 				00ECFD351CBB5550000C9D77 /* Sources */,
 				00ECFD361CBB5550000C9D77 /* Frameworks */,
 				00ECFD371CBB5550000C9D77 /* Resources */,
+				CF1A7C4511F748AE57C8AB27 /* 📦 Embed Pods Frameworks */,
+				343C8632CE54932799173F97 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -210,6 +237,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		343C8632CE54932799173F97 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RoadYatri/Pods-RoadYatri-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4387CB6B90A0F5CD9428E0C4 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CF1A7C4511F748AE57C8AB27 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RoadYatri/Pods-RoadYatri-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		00ECFD351CBB5550000C9D77 /* Sources */ = {
@@ -331,6 +406,7 @@
 		};
 		00ECFD4C1CBB5550000C9D77 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE8C683A9E3D5028699CA860 /* Pods-RoadYatri.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RoadYatri/Info.plist;
@@ -342,6 +418,7 @@
 		};
 		00ECFD4D1CBB5550000C9D77 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5257B912575D12BD1673A4C7 /* Pods-RoadYatri.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RoadYatri/Info.plist;
@@ -370,6 +447,7 @@
 				00ECFD4D1CBB5550000C9D77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

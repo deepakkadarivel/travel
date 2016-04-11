@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05944E6ADB976F2D6F1895E95BBC7EC9 /* FRHyperLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = F5A8EEF167AC1DAE960108EEA1EF47B8 /* FRHyperLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E0F9AC3F4F0DE47C0AC0C21D6A24881 /* Pods-RoadYatri-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6EB719344861BD4E070ACBCA574AD8 /* Pods-RoadYatri-dummy.m */; };
+		2DD7644E71B28418CEA8BDD3C0D3FECA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3997E5D2953ECDF377B85B234FDF550D /* Foundation.framework */; };
+		3540A602E37C24A24AC8E7FC51C897C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3997E5D2953ECDF377B85B234FDF550D /* Foundation.framework */; };
+		64FDC1EDBD3A488B67F5FB89F3C660C6 /* FRHyperLabel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A0F5B16C7BC9365C1F36AAEDEDDF183 /* FRHyperLabel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D893D4FBDEC2FDC4ECD99742851540E8 /* FRHyperLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B141ADD6C22E79E51D51CA027DA7F9ED /* FRHyperLabel-dummy.m */; };
+		DB7C170C92BF8977372CDED1A5492F83 /* FRHyperLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 384A5247AFF616AE7F2BAD46927AB9D1 /* FRHyperLabel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E70633C46F77FE8CC1467E192CD197D3 /* Pods-RoadYatri-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E75B4F89E896FC959E8F989017FC631 /* Pods-RoadYatri-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E3EBB1E10581D9D71A8994E66A8656E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C7866E1905DC3A2FD452BCAF62690C6;
+			remoteInfo = FRHyperLabel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A0F5B16C7BC9365C1F36AAEDEDDF183 /* FRHyperLabel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FRHyperLabel-umbrella.h"; sourceTree = "<group>"; };
+		1A7CA345EB196BD94CFE3E1186400E97 /* Pods_RoadYatri.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoadYatri.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E75B4F89E896FC959E8F989017FC631 /* Pods-RoadYatri-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RoadYatri-umbrella.h"; sourceTree = "<group>"; };
+		3178E68F9CD40CC3AB67BA91E61D5577 /* Pods-RoadYatri-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RoadYatri-resources.sh"; sourceTree = "<group>"; };
+		3503438B4904E0B6E5972623959AF5FA /* FRHyperLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FRHyperLabel.xcconfig; sourceTree = "<group>"; };
+		384A5247AFF616AE7F2BAD46927AB9D1 /* FRHyperLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FRHyperLabel.m; path = FRHyperLabel/FRHyperLabel.m; sourceTree = "<group>"; };
+		38CD0D0D5630AA21B5801A8FBF214AD9 /* Pods-RoadYatri-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RoadYatri-acknowledgements.plist"; sourceTree = "<group>"; };
+		3997E5D2953ECDF377B85B234FDF550D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		65FFD1499E089531A55586368F6EC981 /* FRHyperLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FRHyperLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B9389EFF2D1F2777A63439EA4ED1745 /* Pods-RoadYatri.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RoadYatri.release.xcconfig"; sourceTree = "<group>"; };
+		7BEE29D9A43A5562FCA0ECD5750EE3A2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E6EB719344861BD4E070ACBCA574AD8 /* Pods-RoadYatri-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RoadYatri-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		995167C6F089C1B1A3254D110E44EDA5 /* FRHyperLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FRHyperLabel-prefix.pch"; sourceTree = "<group>"; };
+		A20D3065B3BEF0592AFFAD8B6976821B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC8C975EF38FAD2117D0A3EB351848DE /* Pods-RoadYatri-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RoadYatri-frameworks.sh"; sourceTree = "<group>"; };
+		B141ADD6C22E79E51D51CA027DA7F9ED /* FRHyperLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FRHyperLabel-dummy.m"; sourceTree = "<group>"; };
+		C53804BBA24B90BD59F1136DB1D100A2 /* Pods-RoadYatri.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RoadYatri.debug.xcconfig"; sourceTree = "<group>"; };
+		D5B94DB8530BDD5F85D71B17EC5FF906 /* FRHyperLabel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FRHyperLabel.modulemap; sourceTree = "<group>"; };
+		F5A8EEF167AC1DAE960108EEA1EF47B8 /* FRHyperLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FRHyperLabel.h; path = FRHyperLabel/FRHyperLabel.h; sourceTree = "<group>"; };
+		F956A672097B288CBA1CB35634DDC513 /* Pods-RoadYatri.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RoadYatri.modulemap"; sourceTree = "<group>"; };
+		FDDC8F4A735BB202AEB0886CB587E74D /* Pods-RoadYatri-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RoadYatri-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6C6B5DFB99E9D3718931424B279F4CDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3540A602E37C24A24AC8E7FC51C897C5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDC0E3DDA63A25F55729D0451AB8E4C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DD7644E71B28418CEA8BDD3C0D3FECA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		112C7921E3A497328D11F4930CBBC9CA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3997E5D2953ECDF377B85B234FDF550D /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		1B40A64D4D026F63754772E330BED136 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D5B94DB8530BDD5F85D71B17EC5FF906 /* FRHyperLabel.modulemap */,
+				3503438B4904E0B6E5972623959AF5FA /* FRHyperLabel.xcconfig */,
+				B141ADD6C22E79E51D51CA027DA7F9ED /* FRHyperLabel-dummy.m */,
+				995167C6F089C1B1A3254D110E44EDA5 /* FRHyperLabel-prefix.pch */,
+				0A0F5B16C7BC9365C1F36AAEDEDDF183 /* FRHyperLabel-umbrella.h */,
+				7BEE29D9A43A5562FCA0ECD5750EE3A2 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FRHyperLabel";
+			sourceTree = "<group>";
+		};
+		2F760E78023201CFD74A1E0A6894CA81 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				757A5D950C2FA0878FE361ED40127AC8 /* FRHyperLabel */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		43AFEBBFF20C28C585135BA79B6433D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65FFD1499E089531A55586368F6EC981 /* FRHyperLabel.framework */,
+				1A7CA345EB196BD94CFE3E1186400E97 /* Pods_RoadYatri.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5E655361C91DBBCC57705B856120843F /* Pods-RoadYatri */ = {
+			isa = PBXGroup;
+			children = (
+				A20D3065B3BEF0592AFFAD8B6976821B /* Info.plist */,
+				F956A672097B288CBA1CB35634DDC513 /* Pods-RoadYatri.modulemap */,
+				FDDC8F4A735BB202AEB0886CB587E74D /* Pods-RoadYatri-acknowledgements.markdown */,
+				38CD0D0D5630AA21B5801A8FBF214AD9 /* Pods-RoadYatri-acknowledgements.plist */,
+				8E6EB719344861BD4E070ACBCA574AD8 /* Pods-RoadYatri-dummy.m */,
+				AC8C975EF38FAD2117D0A3EB351848DE /* Pods-RoadYatri-frameworks.sh */,
+				3178E68F9CD40CC3AB67BA91E61D5577 /* Pods-RoadYatri-resources.sh */,
+				1E75B4F89E896FC959E8F989017FC631 /* Pods-RoadYatri-umbrella.h */,
+				C53804BBA24B90BD59F1136DB1D100A2 /* Pods-RoadYatri.debug.xcconfig */,
+				6B9389EFF2D1F2777A63439EA4ED1745 /* Pods-RoadYatri.release.xcconfig */,
+			);
+			name = "Pods-RoadYatri";
+			path = "Target Support Files/Pods-RoadYatri";
+			sourceTree = "<group>";
+		};
+		737BD9954BAACB409363898550B9AF84 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E655361C91DBBCC57705B856120843F /* Pods-RoadYatri */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		757A5D950C2FA0878FE361ED40127AC8 /* FRHyperLabel */ = {
+			isa = PBXGroup;
+			children = (
+				F5A8EEF167AC1DAE960108EEA1EF47B8 /* FRHyperLabel.h */,
+				384A5247AFF616AE7F2BAD46927AB9D1 /* FRHyperLabel.m */,
+				1B40A64D4D026F63754772E330BED136 /* Support Files */,
+			);
+			path = FRHyperLabel;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				2F760E78023201CFD74A1E0A6894CA81 /* Pods */,
+				43AFEBBFF20C28C585135BA79B6433D7 /* Products */,
+				737BD9954BAACB409363898550B9AF84 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				112C7921E3A497328D11F4930CBBC9CA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4DADB71720FFC5DFDF1C14F15D97DDD5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E70633C46F77FE8CC1467E192CD197D3 /* Pods-RoadYatri-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6C798164A3680A0B5F03CB05D0C3CE3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64FDC1EDBD3A488B67F5FB89F3C660C6 /* FRHyperLabel-umbrella.h in Headers */,
+				05944E6ADB976F2D6F1895E95BBC7EC9 /* FRHyperLabel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8C7866E1905DC3A2FD452BCAF62690C6 /* FRHyperLabel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2106CD7C9DE41FD0C255115B959FB9A /* Build configuration list for PBXNativeTarget "FRHyperLabel" */;
+			buildPhases = (
+				398BA635328E75593F4BB6B27662FE91 /* Sources */,
+				DDC0E3DDA63A25F55729D0451AB8E4C3 /* Frameworks */,
+				E6C798164A3680A0B5F03CB05D0C3CE3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FRHyperLabel;
+			productName = FRHyperLabel;
+			productReference = 65FFD1499E089531A55586368F6EC981 /* FRHyperLabel.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EA47A47541F58FF2B0C89E3B6FF5353F /* Pods-RoadYatri */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66004087AD56CECAC8CD62DEEE4FA4A5 /* Build configuration list for PBXNativeTarget "Pods-RoadYatri" */;
+			buildPhases = (
+				AFC8E480710FA1C398E2754A132C22C6 /* Sources */,
+				6C6B5DFB99E9D3718931424B279F4CDF /* Frameworks */,
+				4DADB71720FFC5DFDF1C14F15D97DDD5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42109C50760BA69839D9952430CFFB37 /* PBXTargetDependency */,
+			);
+			name = "Pods-RoadYatri";
+			productName = "Pods-RoadYatri";
+			productReference = 1A7CA345EB196BD94CFE3E1186400E97 /* Pods_RoadYatri.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 43AFEBBFF20C28C585135BA79B6433D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C7866E1905DC3A2FD452BCAF62690C6 /* FRHyperLabel */,
+				EA47A47541F58FF2B0C89E3B6FF5353F /* Pods-RoadYatri */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		398BA635328E75593F4BB6B27662FE91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D893D4FBDEC2FDC4ECD99742851540E8 /* FRHyperLabel-dummy.m in Sources */,
+				DB7C170C92BF8977372CDED1A5492F83 /* FRHyperLabel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFC8E480710FA1C398E2754A132C22C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E0F9AC3F4F0DE47C0AC0C21D6A24881 /* Pods-RoadYatri-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		42109C50760BA69839D9952430CFFB37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FRHyperLabel;
+			target = 8C7866E1905DC3A2FD452BCAF62690C6 /* FRHyperLabel */;
+			targetProxy = E3EBB1E10581D9D71A8994E66A8656E2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2CE16AC72762C01C5DC595053F1F2EF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		A10899E6284FE5ECA8948C7FF3F517F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B9389EFF2D1F2777A63439EA4ED1745 /* Pods-RoadYatri.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RoadYatri/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RoadYatri/Pods-RoadYatri.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RoadYatri;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B6AB8C1526500A75E3656618556BB91F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C53804BBA24B90BD59F1136DB1D100A2 /* Pods-RoadYatri.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RoadYatri/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RoadYatri/Pods-RoadYatri.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RoadYatri;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C6544A1F1139551CE6C6C9B43404CFA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E1FAD724A8D3D893074F17715B7B608A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3503438B4904E0B6E5972623959AF5FA /* FRHyperLabel.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FRHyperLabel/FRHyperLabel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FRHyperLabel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FRHyperLabel/FRHyperLabel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FRHyperLabel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F1D1988424B6132A988C354485D6F198 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3503438B4904E0B6E5972623959AF5FA /* FRHyperLabel.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FRHyperLabel/FRHyperLabel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FRHyperLabel/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FRHyperLabel/FRHyperLabel.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FRHyperLabel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CE16AC72762C01C5DC595053F1F2EF4 /* Debug */,
+				C6544A1F1139551CE6C6C9B43404CFA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66004087AD56CECAC8CD62DEEE4FA4A5 /* Build configuration list for PBXNativeTarget "Pods-RoadYatri" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6AB8C1526500A75E3656618556BB91F /* Debug */,
+				A10899E6284FE5ECA8948C7FF3F517F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D2106CD7C9DE41FD0C255115B959FB9A /* Build configuration list for PBXNativeTarget "FRHyperLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1D1988424B6132A988C354485D6F198 /* Debug */,
+				E1FAD724A8D3D893074F17715B7B608A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
