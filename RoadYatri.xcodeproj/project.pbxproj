@@ -25,6 +25,8 @@
 		00EE6E821CBB86AF0059699F /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00EE6E811CBB86AF0059699F /* Signup.storyboard */; };
 		00EE6E841CBB86BD0059699F /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EE6E831CBB86BD0059699F /* SignupViewController.swift */; };
 		00EE6E881CBB8FAF0059699F /* NavigationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EE6E871CBB8FAF0059699F /* NavigationUtil.swift */; };
+		00FFF3911CBC20AD00BD8665 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00FFF3901CBC20AD00BD8665 /* TabBar.storyboard */; };
+		00FFF3941CBC29CE00BD8665 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FFF3931CBC29CE00BD8665 /* HomeViewController.swift */; };
 		8B1D0C8232751533CCBDBB6E /* Pods_RoadYatri.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5837750431DFE917319818D9 /* Pods_RoadYatri.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +51,8 @@
 		00EE6E811CBB86AF0059699F /* Signup.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
 		00EE6E831CBB86BD0059699F /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		00EE6E871CBB8FAF0059699F /* NavigationUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationUtil.swift; sourceTree = "<group>"; };
+		00FFF3901CBC20AD00BD8665 /* TabBar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
+		00FFF3931CBC29CE00BD8665 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5257B912575D12BD1673A4C7 /* Pods-RoadYatri.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoadYatri.release.xcconfig"; path = "Pods/Target Support Files/Pods-RoadYatri/Pods-RoadYatri.release.xcconfig"; sourceTree = "<group>"; };
 		5837750431DFE917319818D9 /* Pods_RoadYatri.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoadYatri.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE8C683A9E3D5028699CA860 /* Pods-RoadYatri.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoadYatri.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RoadYatri/Pods-RoadYatri.debug.xcconfig"; sourceTree = "<group>"; };
@@ -103,6 +107,7 @@
 		00ECFD4E1CBB562A000C9D77 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				00FFF38F1CBC208400BD8665 /* TabBar */,
 				00EE6E801CBB869D0059699F /* Signup */,
 				00ECFD4F1CBB5645000C9D77 /* Initial */,
 			);
@@ -180,6 +185,23 @@
 				00EE6E871CBB8FAF0059699F /* NavigationUtil.swift */,
 			);
 			name = Util;
+			sourceTree = "<group>";
+		};
+		00FFF38F1CBC208400BD8665 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				00FFF3921CBC29BA00BD8665 /* Home */,
+				00FFF3901CBC20AD00BD8665 /* TabBar.storyboard */,
+			);
+			name = TabBar;
+			sourceTree = "<group>";
+		};
+		00FFF3921CBC29BA00BD8665 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				00FFF3931CBC29CE00BD8665 /* HomeViewController.swift */,
+			);
+			name = Home;
 			sourceTree = "<group>";
 		};
 		8E448C7350632AB9FBFBCFA4 /* Pods */ = {
@@ -261,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00ECFD601CBB63B5000C9D77 /* Philosopher-Regular.ttf in Resources */,
+				00FFF3911CBC20AD00BD8665 /* TabBar.storyboard in Resources */,
 				00ECFD471CBB5550000C9D77 /* LaunchScreen.storyboard in Resources */,
 				00EE6E7B1CBB715C0059699F /* SF-UI-Text-Regular.otf in Resources */,
 				00ECFD5B1CBB5E15000C9D77 /* FiraSans-Regular.otf in Resources */,
@@ -333,6 +356,7 @@
 				00ECFD531CBB5683000C9D77 /* InitialViewController.swift in Sources */,
 				00ECFD5E1CBB612E000C9D77 /* Colors.swift in Sources */,
 				00ECFD651CBB6652000C9D77 /* UILabelExtension.swift in Sources */,
+				00FFF3941CBC29CE00BD8665 /* HomeViewController.swift in Sources */,
 				00EE6E881CBB8FAF0059699F /* NavigationUtil.swift in Sources */,
 				00ECFD3F1CBB5550000C9D77 /* ViewController.swift in Sources */,
 				00ECFD3D1CBB5550000C9D77 /* AppDelegate.swift in Sources */,

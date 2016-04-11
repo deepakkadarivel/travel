@@ -76,6 +76,9 @@ class InitialViewController: UIViewController {
         NavigationUtil.gotoSignup(self)
     }
 
+    @IBAction func createFacebookAccount(sender: AnyObject) {
+        NavigationUtil.gotoHomeScreen()
+    }
     /*
     // MARK: - Navigation
 

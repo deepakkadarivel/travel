@@ -16,4 +16,12 @@ class NavigationUtil {
         destination.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
         vc.presentViewController(destination, animated: true, completion: nil)
     }
+    
+    static func gotoHomeScreen(){
+        let storyBoard = UIStoryboard(name: "TabBar", bundle: nil)
+        let tabBarVC = storyBoard.instantiateViewControllerWithIdentifier("TabBarVC") as! UITabBarController
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        appDelegate.window?.rootViewController = tabBarVC
+    }
+    
 }
