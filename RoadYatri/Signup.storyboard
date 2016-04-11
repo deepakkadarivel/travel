@@ -50,8 +50,8 @@
                                 <color key="textColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="A place for bold travellers." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NzQ-Yk-pLm">
-                                <rect key="frame" x="218" y="203.5" width="164" height="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A place for bold travellers." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NzQ-Yk-pLm">
+                                <rect key="frame" x="218" y="202" width="164" height="17"/>
                                 <fontDescription key="fontDescription" name="FiraSans-Light" family="Fira Sans" pointSize="14"/>
                                 <color key="textColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -231,6 +231,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="appLogo" destination="z96-be-Ydh" id="lA6-b5-i7m"/>
                         <outlet property="appName" destination="Mst-Oa-bqw" id="Czd-ec-2dI"/>
                         <outlet property="appTagLine" destination="NzQ-Yk-pLm" id="fWa-eq-tsv"/>
                         <outlet property="createAccButton" destination="Ihe-3D-ACA" id="Qbc-Oc-Epq"/>

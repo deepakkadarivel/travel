@@ -11,6 +11,7 @@ import FRHyperLabel
 
 class SignupViewController: UIViewController, UITextFieldDelegate {
     
+    @IBOutlet weak var appLogo: UIImageView!
     @IBOutlet weak var appName: UILabel!
     @IBOutlet weak var appTagLine: UILabel!
     @IBOutlet weak var loginLabel: FRHyperLabel!
@@ -99,6 +100,7 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
         UIView.animateWithDuration(0.5, animations: { 
             self.userNameView.alpha = 0
             self.loginLabel.alpha = 0
+            self.appLogo.alpha = 0
             self.userNameView.userInteractionEnabled = false
             self.loginLabel.userInteractionEnabled = false
             self.createAccButton.setTitle("GET STARTED", forState: .Normal)
@@ -113,12 +115,16 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
         self.view.frame.origin.y = -150
         self.appName.alpha = 0
         self.appTagLine.alpha = 0
+        self.appLogo.alpha = 0
+        UIApplication.sharedApplication().statusBarHidden = true
     }
     
     func keyboardWillHide(sender: NSNotification) {
         self.view.frame.origin.y = 0
         self.appName.alpha = 1
         self.appTagLine.alpha = 1
+        self.appLogo.alpha = 1
+        UIApplication.sharedApplication().statusBarHidden = false
     }
     
     func dismissKeyboard() {
@@ -126,6 +132,7 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
         view.endEditing(true)
         self.appName.alpha = 1
         self.appTagLine.alpha = 1
+        self.appLogo.alpha = 1
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
