@@ -12,6 +12,13 @@
 		00ECFD421CBB5550000C9D77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00ECFD401CBB5550000C9D77 /* Main.storyboard */; };
 		00ECFD441CBB5550000C9D77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00ECFD431CBB5550000C9D77 /* Assets.xcassets */; };
 		00ECFD471CBB5550000C9D77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00ECFD451CBB5550000C9D77 /* LaunchScreen.storyboard */; };
+		00ECFD511CBB5668000C9D77 /* Initial.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00ECFD501CBB5668000C9D77 /* Initial.storyboard */; };
+		00ECFD531CBB5683000C9D77 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ECFD521CBB5683000C9D77 /* InitialViewController.swift */; };
+		00ECFD591CBB5DDE000C9D77 /* FiraSans-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 00ECFD581CBB5DDE000C9D77 /* FiraSans-Light.otf */; };
+		00ECFD5B1CBB5E15000C9D77 /* FiraSans-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 00ECFD5A1CBB5E15000C9D77 /* FiraSans-Regular.otf */; };
+		00ECFD5E1CBB612E000C9D77 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ECFD5D1CBB612E000C9D77 /* Colors.swift */; };
+		00ECFD601CBB63B5000C9D77 /* Philosopher-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 00ECFD5F1CBB63B5000C9D77 /* Philosopher-Regular.ttf */; };
+		00ECFD651CBB6652000C9D77 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ECFD641CBB6652000C9D77 /* UILabelExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		00ECFD431CBB5550000C9D77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00ECFD461CBB5550000C9D77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00ECFD481CBB5550000C9D77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00ECFD501CBB5668000C9D77 /* Initial.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Initial.storyboard; sourceTree = "<group>"; };
+		00ECFD521CBB5683000C9D77 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		00ECFD581CBB5DDE000C9D77 /* FiraSans-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraSans-Light.otf"; sourceTree = "<group>"; };
+		00ECFD5A1CBB5E15000C9D77 /* FiraSans-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraSans-Regular.otf"; sourceTree = "<group>"; };
+		00ECFD5D1CBB612E000C9D77 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		00ECFD5F1CBB63B5000C9D77 /* Philosopher-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Philosopher-Regular.ttf"; sourceTree = "<group>"; };
+		00ECFD641CBB6652000C9D77 /* UILabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,8 @@
 		00ECFD3B1CBB5550000C9D77 /* RoadYatri */ = {
 			isa = PBXGroup;
 			children = (
+				00ECFD541CBB5C04000C9D77 /* Extras */,
+				00ECFD4E1CBB562A000C9D77 /* Controllers */,
 				00ECFD3C1CBB5550000C9D77 /* AppDelegate.swift */,
 				00ECFD3E1CBB5550000C9D77 /* ViewController.swift */,
 				00ECFD401CBB5550000C9D77 /* Main.storyboard */,
@@ -62,6 +78,67 @@
 				00ECFD481CBB5550000C9D77 /* Info.plist */,
 			);
 			path = RoadYatri;
+			sourceTree = "<group>";
+		};
+		00ECFD4E1CBB562A000C9D77 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				00ECFD4F1CBB5645000C9D77 /* Initial */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		00ECFD4F1CBB5645000C9D77 /* Initial */ = {
+			isa = PBXGroup;
+			children = (
+				00ECFD501CBB5668000C9D77 /* Initial.storyboard */,
+				00ECFD521CBB5683000C9D77 /* InitialViewController.swift */,
+			);
+			name = Initial;
+			sourceTree = "<group>";
+		};
+		00ECFD541CBB5C04000C9D77 /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+				00ECFD611CBB6406000C9D77 /* Views */,
+				00ECFD5C1CBB611E000C9D77 /* Colors */,
+				00ECFD561CBB5C1D000C9D77 /* Sounds */,
+				00ECFD551CBB5C14000C9D77 /* Fonts */,
+			);
+			name = Extras;
+			sourceTree = "<group>";
+		};
+		00ECFD551CBB5C14000C9D77 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				00ECFD5F1CBB63B5000C9D77 /* Philosopher-Regular.ttf */,
+				00ECFD5A1CBB5E15000C9D77 /* FiraSans-Regular.otf */,
+				00ECFD581CBB5DDE000C9D77 /* FiraSans-Light.otf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		00ECFD561CBB5C1D000C9D77 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+		00ECFD5C1CBB611E000C9D77 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				00ECFD5D1CBB612E000C9D77 /* Colors.swift */,
+			);
+			name = Colors;
+			sourceTree = "<group>";
+		};
+		00ECFD611CBB6406000C9D77 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				00ECFD641CBB6652000C9D77 /* UILabelExtension.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +199,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00ECFD601CBB63B5000C9D77 /* Philosopher-Regular.ttf in Resources */,
 				00ECFD471CBB5550000C9D77 /* LaunchScreen.storyboard in Resources */,
+				00ECFD5B1CBB5E15000C9D77 /* FiraSans-Regular.otf in Resources */,
 				00ECFD441CBB5550000C9D77 /* Assets.xcassets in Resources */,
 				00ECFD421CBB5550000C9D77 /* Main.storyboard in Resources */,
+				00ECFD591CBB5DDE000C9D77 /* FiraSans-Light.otf in Resources */,
+				00ECFD511CBB5668000C9D77 /* Initial.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +216,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00ECFD531CBB5683000C9D77 /* InitialViewController.swift in Sources */,
+				00ECFD5E1CBB612E000C9D77 /* Colors.swift in Sources */,
+				00ECFD651CBB6652000C9D77 /* UILabelExtension.swift in Sources */,
 				00ECFD3F1CBB5550000C9D77 /* ViewController.swift in Sources */,
 				00ECFD3D1CBB5550000C9D77 /* AppDelegate.swift in Sources */,
 			);

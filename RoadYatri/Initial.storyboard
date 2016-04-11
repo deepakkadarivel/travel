@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Yj7-J2-pIx">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="FiraSans-Light.otf">
+            <string>FiraSans-Light</string>
+        </mutableArray>
+        <mutableArray key="Philosopher-Regular.ttf">
+            <string>Philosopher</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Initial View Controller-->
+        <scene sceneID="BcX-4i-r6U">
+            <objects>
+                <viewController storyboardIdentifier="InitialVC" id="Yj7-J2-pIx" customClass="InitialViewController" customModule="RoadYatri" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uUT-mw-d1g"/>
+                        <viewControllerLayoutGuide type="bottom" id="8ob-Zo-A1P"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="prX-Ay-GHx">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="initial_bg" translatesAutoresizingMaskIntoConstraints="NO" id="gKf-6Z-gXR">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppLogo" translatesAutoresizingMaskIntoConstraints="NO" id="BWe-dd-fdi">
+                                <rect key="frame" x="250" y="70" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="eii-rc-87Y"/>
+                                    <constraint firstAttribute="width" constant="100" id="yxF-70-Y4q"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ROADYATRI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pSk-mJ-eHB">
+                                <rect key="frame" x="248" y="190" width="104" height="22"/>
+                                <fontDescription key="fontDescription" name="Philosopher" family="Philosopher" pointSize="20"/>
+                                <color key="textColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A place for bold travellers." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oae-8G-c57">
+                                <rect key="frame" x="200.5" y="222" width="199" height="21"/>
+                                <fontDescription key="fontDescription" name="FiraSans-Light" family="Fira Sans" pointSize="17"/>
+                                <color key="textColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gKf-6Z-gXR" firstAttribute="leading" secondItem="prX-Ay-GHx" secondAttribute="leading" id="1Az-Bd-c6i"/>
+                            <constraint firstAttribute="trailing" secondItem="gKf-6Z-gXR" secondAttribute="trailing" id="1YQ-uN-39j"/>
+                            <constraint firstItem="8ob-Zo-A1P" firstAttribute="top" secondItem="gKf-6Z-gXR" secondAttribute="bottom" id="2iv-mI-8Qc"/>
+                            <constraint firstItem="pSk-mJ-eHB" firstAttribute="centerX" secondItem="prX-Ay-GHx" secondAttribute="centerX" id="5VK-Xx-mrt"/>
+                            <constraint firstItem="gKf-6Z-gXR" firstAttribute="leading" secondItem="prX-Ay-GHx" secondAttribute="leading" id="9ar-sW-VRI"/>
+                            <constraint firstItem="Oae-8G-c57" firstAttribute="top" secondItem="pSk-mJ-eHB" secondAttribute="bottom" constant="10" id="LGV-tP-Jkh"/>
+                            <constraint firstItem="pSk-mJ-eHB" firstAttribute="top" secondItem="BWe-dd-fdi" secondAttribute="bottom" constant="20" id="OPB-tA-AZM"/>
+                            <constraint firstItem="gKf-6Z-gXR" firstAttribute="top" secondItem="uUT-mw-d1g" secondAttribute="bottom" id="Ti1-yB-HED"/>
+                            <constraint firstItem="Oae-8G-c57" firstAttribute="centerX" secondItem="prX-Ay-GHx" secondAttribute="centerX" id="cDy-51-SA0"/>
+                            <constraint firstItem="8ob-Zo-A1P" firstAttribute="top" secondItem="gKf-6Z-gXR" secondAttribute="bottom" id="eRd-wd-Xwd"/>
+                            <constraint firstAttribute="trailing" secondItem="gKf-6Z-gXR" secondAttribute="trailing" id="fvV-Fr-nyV"/>
+                            <constraint firstItem="gKf-6Z-gXR" firstAttribute="top" secondItem="prX-Ay-GHx" secondAttribute="top" id="gg7-JW-Xe2"/>
+                            <constraint firstItem="BWe-dd-fdi" firstAttribute="top" secondItem="uUT-mw-d1g" secondAttribute="bottom" constant="50" id="jLo-y7-ciz"/>
+                            <constraint firstItem="BWe-dd-fdi" firstAttribute="centerX" secondItem="prX-Ay-GHx" secondAttribute="centerX" id="zZo-P5-lAi"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="9ar-sW-VRI"/>
+                                <exclude reference="Ti1-yB-HED"/>
+                                <exclude reference="fvV-Fr-nyV"/>
+                                <exclude reference="2iv-mI-8Qc"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="appName" destination="pSk-mJ-eHB" id="OkS-QO-ClG"/>
+                        <outlet property="appTagLine" destination="Oae-8G-c57" id="P5g-Hj-0c1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QUm-2e-pu4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="271" y="143"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AppLogo" width="120" height="120"/>
+        <image name="initial_bg" width="902" height="1089"/>
+    </resources>
+</document>
