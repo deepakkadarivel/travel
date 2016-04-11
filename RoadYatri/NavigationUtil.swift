@@ -13,7 +13,7 @@ class NavigationUtil {
     static func gotoSignup(vc: UIViewController) {
         let storyboard : UIStoryboard = UIStoryboard(name: "Signup", bundle: nil)
         let destination = storyboard.instantiateViewControllerWithIdentifier("SignupVC") as! SignupViewController
-//        destination.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
+        destination.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
         vc.presentViewController(destination, animated: true, completion: nil)
     }
 }

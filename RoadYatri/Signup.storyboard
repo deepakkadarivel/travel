@@ -50,8 +50,8 @@
                                 <color key="textColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A place for bold travellers." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NzQ-Yk-pLm">
-                                <rect key="frame" x="218" y="202" width="164" height="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="A place for bold travellers." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NzQ-Yk-pLm">
+                                <rect key="frame" x="218" y="203.5" width="164" height="17"/>
                                 <fontDescription key="fontDescription" name="FiraSans-Light" family="Fira Sans" pointSize="14"/>
                                 <color key="textColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -234,8 +234,11 @@
                         <outlet property="appName" destination="Mst-Oa-bqw" id="Czd-ec-2dI"/>
                         <outlet property="appTagLine" destination="NzQ-Yk-pLm" id="fWa-eq-tsv"/>
                         <outlet property="createAccButton" destination="Ihe-3D-ACA" id="Qbc-Oc-Epq"/>
+                        <outlet property="emailTextField" destination="xIo-I0-7oa" id="T8A-zS-xwI"/>
                         <outlet property="emailView" destination="I8I-Pd-sEb" id="n1c-1c-KMP"/>
                         <outlet property="loginLabel" destination="VB5-K9-vj9" id="nVZ-K3-uA7"/>
+                        <outlet property="nameTextField" destination="OOH-yI-gUY" id="rad-wA-Xn2"/>
+                        <outlet property="passwordTextField" destination="PuB-0i-1H4" id="0RK-ix-3Eg"/>
                         <outlet property="passwordView" destination="jIQ-7A-OYj" id="kVj-rK-zHb"/>
                         <outlet property="userNameView" destination="W7w-6i-vVf" id="IFQ-NW-H8d"/>
                     </connections>

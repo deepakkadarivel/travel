@@ -36,20 +36,20 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppLogo" translatesAutoresizingMaskIntoConstraints="NO" id="BWe-dd-fdi">
-                                <rect key="frame" x="250" y="70" width="100" height="100"/>
+                                <rect key="frame" x="250" y="50" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="eii-rc-87Y"/>
                                     <constraint firstAttribute="width" constant="100" id="yxF-70-Y4q"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ROADYATRI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pSk-mJ-eHB">
-                                <rect key="frame" x="248" y="190" width="104" height="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ROADYATRI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pSk-mJ-eHB">
+                                <rect key="frame" x="248" y="170" width="104" height="22"/>
                                 <fontDescription key="fontDescription" name="Philosopher" family="Philosopher" pointSize="20"/>
                                 <color key="textColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="A place for bold travellers." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oae-8G-c57">
-                                <rect key="frame" x="218" y="222" width="164" height="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A place for bold travellers." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oae-8G-c57">
+                                <rect key="frame" x="218" y="202" width="164" height="17"/>
                                 <fontDescription key="fontDescription" name="FiraSans-Light" family="Fira Sans" pointSize="14"/>
                                 <color key="textColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -102,7 +102,7 @@
                             <constraint firstItem="8ob-Zo-A1P" firstAttribute="top" secondItem="gKf-6Z-gXR" secondAttribute="bottom" id="eRd-wd-Xwd"/>
                             <constraint firstItem="gKf-6Z-gXR" firstAttribute="top" secondItem="prX-Ay-GHx" secondAttribute="top" id="gg7-JW-Xe2"/>
                             <constraint firstItem="1yl-Jy-ZBd" firstAttribute="leading" secondItem="prX-Ay-GHx" secondAttribute="leading" constant="25" id="hRy-Ju-CNL"/>
-                            <constraint firstItem="BWe-dd-fdi" firstAttribute="top" secondItem="uUT-mw-d1g" secondAttribute="bottom" constant="50" id="jLo-y7-ciz"/>
+                            <constraint firstItem="BWe-dd-fdi" firstAttribute="top" secondItem="uUT-mw-d1g" secondAttribute="bottom" constant="30" id="jLo-y7-ciz"/>
                             <constraint firstAttribute="trailing" secondItem="1yl-Jy-ZBd" secondAttribute="trailing" constant="25" id="lUU-fg-FRH"/>
                             <constraint firstItem="KFk-3P-xK2" firstAttribute="centerX" secondItem="prX-Ay-GHx" secondAttribute="centerX" id="pDy-JU-kfH"/>
                             <constraint firstItem="BWe-dd-fdi" firstAttribute="centerX" secondItem="prX-Ay-GHx" secondAttribute="centerX" id="zZo-P5-lAi"/>

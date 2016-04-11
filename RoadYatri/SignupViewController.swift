@@ -9,7 +9,7 @@
 import UIKit
 import FRHyperLabel
 
-class SignupViewController: UIViewController {
+class SignupViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var appName: UILabel!
     @IBOutlet weak var appTagLine: UILabel!
@@ -18,6 +18,10 @@ class SignupViewController: UIViewController {
     @IBOutlet weak var emailView: UIView!
     @IBOutlet weak var userNameView: UIView!
     @IBOutlet weak var createAccButton: UIButton!
+    
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
     
     override func viewWillAppear(animated: Bool) {
         
@@ -46,7 +50,7 @@ class SignupViewController: UIViewController {
             (hyperLabel: FRHyperLabel!, substring: String!) -> Void in
             switch substring {
             case "Login":
-                //
+                self.animateLogin()
                 break
             default:
                 break
@@ -66,7 +70,16 @@ class SignupViewController: UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
+
+        emailTextField.delegate = self
+        nameTextField.delegate = self
+        passwordTextField.delegate = self
         
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(SignupViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(SignupViewController.keyboardWillShow(_:)), name:UIKeyboardWillShowNotification, object: nil);
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(SignupViewController.keyboardWillHide(_:)), name:UIKeyboardWillHideNotification, object: nil);
     }
 
     override func didReceiveMemoryWarning() {
@@ -80,6 +93,44 @@ class SignupViewController: UIViewController {
     
     @IBAction func dismissVC(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    func animateLogin() {
+        UIView.animateWithDuration(0.5, animations: { 
+            self.userNameView.alpha = 0
+            self.loginLabel.alpha = 0
+            self.userNameView.userInteractionEnabled = false
+            self.loginLabel.userInteractionEnabled = false
+            self.createAccButton.setTitle("GET STARTED", forState: .Normal)
+            }, completion: nil)
+    }
+    
+    deinit {
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
+    
+    func keyboardWillShow(sender: NSNotification) {
+        self.view.frame.origin.y = -150
+        self.appName.alpha = 0
+        self.appTagLine.alpha = 0
+    }
+    
+    func keyboardWillHide(sender: NSNotification) {
+        self.view.frame.origin.y = 0
+        self.appName.alpha = 1
+        self.appTagLine.alpha = 1
+    }
+    
+    func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
+        self.appName.alpha = 1
+        self.appTagLine.alpha = 1
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
     /*
     // MARK: - Navigation
