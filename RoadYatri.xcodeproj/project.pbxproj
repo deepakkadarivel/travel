@@ -21,6 +21,7 @@
 		00ECFD651CBB6652000C9D77 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ECFD641CBB6652000C9D77 /* UILabelExtension.swift */; };
 		00EE6E7B1CBB715C0059699F /* SF-UI-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 00EE6E7A1CBB715C0059699F /* SF-UI-Text-Regular.otf */; };
 		00EE6E7D1CBB718B0059699F /* SF-UI-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 00EE6E7C1CBB718B0059699F /* SF-UI-Text-Medium.otf */; };
+		00EE6E7F1CBB7B780059699F /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EE6E7E1CBB7B780059699F /* UIViewExtension.swift */; };
 		8B1D0C8232751533CCBDBB6E /* Pods_RoadYatri.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5837750431DFE917319818D9 /* Pods_RoadYatri.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		00ECFD641CBB6652000C9D77 /* UILabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
 		00EE6E7A1CBB715C0059699F /* SF-UI-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Text-Regular.otf"; sourceTree = "<group>"; };
 		00EE6E7C1CBB718B0059699F /* SF-UI-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Text-Medium.otf"; sourceTree = "<group>"; };
+		00EE6E7E1CBB7B780059699F /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		5257B912575D12BD1673A4C7 /* Pods-RoadYatri.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoadYatri.release.xcconfig"; path = "Pods/Target Support Files/Pods-RoadYatri/Pods-RoadYatri.release.xcconfig"; sourceTree = "<group>"; };
 		5837750431DFE917319818D9 /* Pods_RoadYatri.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoadYatri.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE8C683A9E3D5028699CA860 /* Pods-RoadYatri.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoadYatri.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RoadYatri/Pods-RoadYatri.debug.xcconfig"; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				00ECFD641CBB6652000C9D77 /* UILabelExtension.swift */,
+				00EE6E7E1CBB7B780059699F /* UIViewExtension.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00EE6E7F1CBB7B780059699F /* UIViewExtension.swift in Sources */,
 				00ECFD531CBB5683000C9D77 /* InitialViewController.swift in Sources */,
 				00ECFD5E1CBB612E000C9D77 /* Colors.swift in Sources */,
 				00ECFD651CBB6652000C9D77 /* UILabelExtension.swift in Sources */,
