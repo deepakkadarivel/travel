@@ -14,12 +14,17 @@ class InitialViewController: UIViewController {
     @IBOutlet weak var appName: UILabel!
     @IBOutlet weak var appTagLine: UILabel!
     @IBOutlet weak var tosLabel: FRHyperLabel!
+    @IBOutlet weak var createAccButton: UIButton!
+    @IBOutlet weak var facebookAccButton: UIButton!
     
     override func viewWillAppear(animated: Bool) {
         
         //AppName and TagLine Shadow
         appName.applyShadow(appName)
         appTagLine.applyShadow(appTagLine)
+        
+        self.createAccButton.applyCornerRadius(self.createAccButton, cornerRadius: self.createAccButton.frame.size.height / 2, borderColor: UIColor.clearColor())
+        self.facebookAccButton.applyCornerRadius(self.facebookAccButton, cornerRadius: self.facebookAccButton.frame.size.height / 2, borderColor: UIColor.clearColor())
         
         // MARK: - TOS and Privacy Text Formatting
         //Step 1: Setup Label value and attribues

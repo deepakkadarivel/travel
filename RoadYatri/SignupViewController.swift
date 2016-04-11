@@ -17,6 +17,7 @@ class SignupViewController: UIViewController {
     @IBOutlet weak var passwordView: UIView!
     @IBOutlet weak var emailView: UIView!
     @IBOutlet weak var userNameView: UIView!
+    @IBOutlet weak var createAccButton: UIButton!
     
     override func viewWillAppear(animated: Bool) {
         
@@ -24,9 +25,10 @@ class SignupViewController: UIViewController {
         appName.applyShadow(appName)
         appTagLine.applyShadow(appTagLine)
         
-        self.userNameView.applyCornerRadius(self.userNameView, cornerRadius: self.userNameView.frame.size.height / 2)
-        self.emailView.applyCornerRadius(self.emailView, cornerRadius: self.emailView.frame.size.height / 2)
-        self.passwordView.applyCornerRadius(self.passwordView, cornerRadius: self.passwordView.frame.size.height / 2)
+        self.userNameView.applyCornerRadius(self.userNameView, cornerRadius: self.userNameView.frame.size.height / 2, borderColor: Colors.White)
+        self.emailView.applyCornerRadius(self.emailView, cornerRadius: self.emailView.frame.size.height / 2, borderColor: Colors.White)
+        self.passwordView.applyCornerRadius(self.passwordView, cornerRadius: self.passwordView.frame.size.height / 2, borderColor: Colors.White)
+        self.createAccButton.applyCornerRadius(self.createAccButton, cornerRadius: self.createAccButton.frame.size.height / 2, borderColor: UIColor.clearColor())
         
         // MARK: - Login link Text Formatting
         //Step 1: Setup Label value and attribues

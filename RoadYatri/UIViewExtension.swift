@@ -32,11 +32,11 @@ extension UIView {
         return blurEffectView
     }
     
-    func applyCornerRadius(view: UIView, cornerRadius: CGFloat) -> UIView {
+    func applyCornerRadius(view: UIView, cornerRadius: CGFloat, borderColor: UIColor) -> UIView {
         view.layer.cornerRadius = cornerRadius
         view.clipsToBounds = true
         view.layer.borderWidth = 1.0
-        view.layer.borderColor = UIColor.whiteColor().CGColor
+        view.layer.borderColor = borderColor.CGColor
         return view
     }
 }

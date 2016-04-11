@@ -11,6 +11,10 @@
         <mutableArray key="Philosopher-Regular.ttf">
             <string>Philosopher</string>
         </mutableArray>
+        <mutableArray key="SF-UI-Text-Medium.otf">
+            <string>SFUIText-Medium</string>
+            <string>SFUIText-Medium</string>
+        </mutableArray>
         <mutableArray key="SF-UI-Text-Regular.otf">
             <string>SFUIText-Regular</string>
         </mutableArray>
@@ -38,13 +42,13 @@
                                     <constraint firstAttribute="width" constant="100" id="yxF-70-Y4q"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ROADYATRI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pSk-mJ-eHB">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ROADYATRI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pSk-mJ-eHB">
                                 <rect key="frame" x="248" y="190" width="104" height="22"/>
                                 <fontDescription key="fontDescription" name="Philosopher" family="Philosopher" pointSize="20"/>
                                 <color key="textColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A place for bold travellers." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oae-8G-c57">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="A place for bold travellers." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oae-8G-c57">
                                 <rect key="frame" x="218" y="222" width="164" height="17"/>
                                 <fontDescription key="fontDescription" name="FiraSans-Light" family="Fira Sans" pointSize="14"/>
                                 <color key="textColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -58,17 +62,23 @@
                             </label>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XZf-Bf-I2o">
                                 <rect key="frame" x="25" y="490" width="550" height="50"/>
+                                <color key="backgroundColor" red="0.22537201642990112" green="0.34264656901359558" blue="0.60412263870239258" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="pk7-I9-BYW"/>
                                 </constraints>
-                                <state key="normal" image="facebook_button"/>
+                                <fontDescription key="fontDescription" name="SFUIText-Medium" family="SF UI Text" pointSize="16"/>
+                                <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="15" maxY="0.0"/>
+                                <state key="normal" title="CONNECT WITH FACEBOOK" image="facebook_logo"/>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yl-Jy-ZBd">
                                 <rect key="frame" x="25" y="410" width="550" height="50"/>
+                                <color key="backgroundColor" red="0.9437374472618103" green="0.1194407120347023" blue="0.36736857891082764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="B8X-Ip-rEG"/>
                                 </constraints>
-                                <state key="normal" image="create_acc_button"/>
+                                <fontDescription key="fontDescription" name="SFUIText-Medium" family="SF UI Text" pointSize="16"/>
+                                <state key="normal" title="CREATE AN ACCOUNT"/>
                                 <connections>
                                     <action selector="createNewAccount:" destination="Yj7-J2-pIx" eventType="touchUpInside" id="gRe-eH-yZa"/>
                                 </connections>
@@ -101,6 +111,8 @@
                     <connections>
                         <outlet property="appName" destination="pSk-mJ-eHB" id="OkS-QO-ClG"/>
                         <outlet property="appTagLine" destination="Oae-8G-c57" id="P5g-Hj-0c1"/>
+                        <outlet property="createAccButton" destination="1yl-Jy-ZBd" id="Eus-3n-6Gi"/>
+                        <outlet property="facebookAccButton" destination="XZf-Bf-I2o" id="7AV-vT-ZmH"/>
                         <outlet property="tosLabel" destination="KFk-3P-xK2" id="nvw-oy-YIT"/>
                     </connections>
                 </viewController>
@@ -111,8 +123,7 @@
     </scenes>
     <resources>
         <image name="AppLogo" width="120" height="120"/>
-        <image name="create_acc_button" width="325" height="50"/>
-        <image name="facebook_button" width="325" height="50"/>
+        <image name="facebook_logo" width="16" height="30"/>
         <image name="initial_bg" width="902" height="1089"/>
     </resources>
 </document>
