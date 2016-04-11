@@ -1,5 +1,5 @@
 //
-//  InitialViewController.swift
+//  SignupViewController.swift
 //  RoadYatri
 //
 //  Created by Deepak Kadarivel on 11/04/16.
@@ -9,11 +9,14 @@
 import UIKit
 import FRHyperLabel
 
-class InitialViewController: UIViewController {
-
+class SignupViewController: UIViewController {
+    
     @IBOutlet weak var appName: UILabel!
     @IBOutlet weak var appTagLine: UILabel!
-    @IBOutlet weak var tosLabel: FRHyperLabel!
+    @IBOutlet weak var loginLabel: FRHyperLabel!
+    @IBOutlet weak var passwordView: UIView!
+    @IBOutlet weak var emailView: UIView!
+    @IBOutlet weak var userNameView: UIView!
     
     override func viewWillAppear(animated: Bool) {
         
@@ -21,25 +24,26 @@ class InitialViewController: UIViewController {
         appName.applyShadow(appName)
         appTagLine.applyShadow(appTagLine)
         
-        // MARK: - TOS and Privacy Text Formatting
-        //Step 1: Setup Label value and attribues
-        tosLabel.numberOfLines = 0;
+        self.userNameView.applyCornerRadius(self.userNameView, cornerRadius: self.userNameView.frame.size.height / 2)
+        self.emailView.applyCornerRadius(self.emailView, cornerRadius: self.emailView.frame.size.height / 2)
+        self.passwordView.applyCornerRadius(self.passwordView, cornerRadius: self.passwordView.frame.size.height / 2)
         
-        let string = "By signing up you confirm to accept our Privacy Policy and Terms of Use."
+        // MARK: - Login link Text Formatting
+        //Step 1: Setup Label value and attribues
+        loginLabel.numberOfLines = 0;
+        
+        let string = "Already have an account? Login"
         
         let attributes = [NSForegroundColorAttributeName: UIColor.whiteColor(),
                           NSFontAttributeName: UIFont.preferredFontForTextStyle(UIFontTextStyleFootnote)]
         
-        tosLabel.attributedText = NSAttributedString(string: string, attributes: attributes)
+        loginLabel.attributedText = NSAttributedString(string: string, attributes: attributes)
         
         //Step 2: Define a selection handler block
         let handler = {
             (hyperLabel: FRHyperLabel!, substring: String!) -> Void in
             switch substring {
-            case "Privacy Policy":
-                //
-                break
-            case "Terms of Use.":
+            case "Login":
                 //
                 break
             default:
@@ -48,14 +52,19 @@ class InitialViewController: UIViewController {
             
         }
         //Step 3: Add link substrings
-        tosLabel.setLinksForSubstrings(["Privacy Policy", "Terms of Use."], withLinkHandler: handler)
+        loginLabel.setLinksForSubstrings(["Login"], withLinkHandler: handler)
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         //Gradient Layer
-        self.view.addBackgroundGradientLayer(self.view, subView: self.view, colorTop: Colors.Transparent, colorBottom: Colors.HalfBlack)
+        self.view.addBackgroundGradientLayer(self.view, subView: self.view, colorTop: Colors.Transparent, colorBottom: Colors.Black)
+
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -67,10 +76,9 @@ class InitialViewController: UIViewController {
         return .LightContent
     }
     
-    @IBAction func createNewAccount(sender: AnyObject) {
-        NavigationUtil.gotoSignup(self)
+    @IBAction func dismissVC(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
-
     /*
     // MARK: - Navigation
 
