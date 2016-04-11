@@ -23,7 +23,9 @@ class InitialViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         
+        //Gradient Layer
         self.view.addBackgroundGradientLayer(self.view, subView: self.view, colorTop: Colors.Transparent, colorBottom: Colors.HalfBlack)
+        
         //AppName and TagLine Shadow
         appName.applyShadow(appName)
         appTagLine.applyShadow(appTagLine)
