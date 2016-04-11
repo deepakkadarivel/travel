@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import FRHyperLabel
 
 class InitialViewController: UIViewController {
 
     @IBOutlet weak var appName: UILabel!
     @IBOutlet weak var appTagLine: UILabel!
+    @IBOutlet weak var tosLabel: FRHyperLabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,8 +22,39 @@ class InitialViewController: UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
+        
+        //AppName and TagLine Shadow
         appName.applyShadow(appName)
         appTagLine.applyShadow(appTagLine)
+        
+        // MARK: - TOS and Privacy Text Formatting
+        //Step 1: Setup Label value and attribues
+        tosLabel.numberOfLines = 0;
+        
+        let string = "By signing up you confirm to accept our Privacy Policy and Terms of Use."
+        
+        let attributes = [NSForegroundColorAttributeName: UIColor.whiteColor(),
+                          NSFontAttributeName: UIFont.preferredFontForTextStyle(UIFontTextStyleFootnote)]
+        
+        tosLabel.attributedText = NSAttributedString(string: string, attributes: attributes)
+        
+        //Step 2: Define a selection handler block
+        let handler = {
+            (hyperLabel: FRHyperLabel!, substring: String!) -> Void in
+            switch substring {
+            case "Privacy Policy":
+                //
+                break
+            case "Terms of Use.":
+                //
+                break
+            default:
+                break
+            }
+            
+        }
+        //Step 3: Add link substrings
+        tosLabel.setLinksForSubstrings(["Privacy Policy", "Terms of Use."], withLinkHandler: handler)
     }
 
     override func didReceiveMemoryWarning() {

@@ -11,6 +11,9 @@
         <mutableArray key="Philosopher-Regular.ttf">
             <string>Philosopher</string>
         </mutableArray>
+        <mutableArray key="SF-UI-Text-Regular.otf">
+            <string>SFUIText-Regular</string>
+        </mutableArray>
     </customFonts>
     <scenes>
         <!--Initial View Controller-->
@@ -42,41 +45,60 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A place for bold travellers." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oae-8G-c57">
-                                <rect key="frame" x="200.5" y="222" width="199" height="21"/>
+                                <rect key="frame" x="200" y="222" width="199" height="21"/>
                                 <fontDescription key="fontDescription" name="FiraSans-Light" family="Fira Sans" pointSize="17"/>
                                 <color key="textColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFk-3P-xK2" customClass="FRHyperLabel">
+                                <rect key="frame" x="20" y="570" width="560" height="0.0"/>
+                                <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="14"/>
+                                <color key="textColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XZf-Bf-I2o">
+                                <rect key="frame" x="25" y="490" width="550" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="pk7-I9-BYW"/>
+                                </constraints>
+                                <state key="normal" image="facebook_button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yl-Jy-ZBd">
+                                <rect key="frame" x="25" y="410" width="550" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="B8X-Ip-rEG"/>
+                                </constraints>
+                                <state key="normal" image="create_acc_button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="gKf-6Z-gXR" firstAttribute="leading" secondItem="prX-Ay-GHx" secondAttribute="leading" id="1Az-Bd-c6i"/>
                             <constraint firstAttribute="trailing" secondItem="gKf-6Z-gXR" secondAttribute="trailing" id="1YQ-uN-39j"/>
-                            <constraint firstItem="8ob-Zo-A1P" firstAttribute="top" secondItem="gKf-6Z-gXR" secondAttribute="bottom" id="2iv-mI-8Qc"/>
+                            <constraint firstItem="KFk-3P-xK2" firstAttribute="leading" secondItem="prX-Ay-GHx" secondAttribute="leading" constant="20" id="25P-w6-T6e"/>
                             <constraint firstItem="pSk-mJ-eHB" firstAttribute="centerX" secondItem="prX-Ay-GHx" secondAttribute="centerX" id="5VK-Xx-mrt"/>
-                            <constraint firstItem="gKf-6Z-gXR" firstAttribute="leading" secondItem="prX-Ay-GHx" secondAttribute="leading" id="9ar-sW-VRI"/>
+                            <constraint firstItem="XZf-Bf-I2o" firstAttribute="top" secondItem="1yl-Jy-ZBd" secondAttribute="bottom" constant="30" id="AXA-Wo-Bft"/>
+                            <constraint firstItem="8ob-Zo-A1P" firstAttribute="top" secondItem="KFk-3P-xK2" secondAttribute="bottom" constant="30" id="AaW-Lp-Vqc"/>
+                            <constraint firstItem="KFk-3P-xK2" firstAttribute="top" secondItem="XZf-Bf-I2o" secondAttribute="bottom" constant="30" id="Ivb-KY-vY4"/>
+                            <constraint firstItem="XZf-Bf-I2o" firstAttribute="leading" secondItem="prX-Ay-GHx" secondAttribute="leading" constant="25" id="JjE-n7-r4U"/>
                             <constraint firstItem="Oae-8G-c57" firstAttribute="top" secondItem="pSk-mJ-eHB" secondAttribute="bottom" constant="10" id="LGV-tP-Jkh"/>
                             <constraint firstItem="pSk-mJ-eHB" firstAttribute="top" secondItem="BWe-dd-fdi" secondAttribute="bottom" constant="20" id="OPB-tA-AZM"/>
-                            <constraint firstItem="gKf-6Z-gXR" firstAttribute="top" secondItem="uUT-mw-d1g" secondAttribute="bottom" id="Ti1-yB-HED"/>
+                            <constraint firstAttribute="trailing" secondItem="KFk-3P-xK2" secondAttribute="trailing" constant="20" id="Pnx-q5-Lt2"/>
+                            <constraint firstAttribute="trailing" secondItem="XZf-Bf-I2o" secondAttribute="trailing" constant="25" id="Uxp-cx-xLh"/>
                             <constraint firstItem="Oae-8G-c57" firstAttribute="centerX" secondItem="prX-Ay-GHx" secondAttribute="centerX" id="cDy-51-SA0"/>
                             <constraint firstItem="8ob-Zo-A1P" firstAttribute="top" secondItem="gKf-6Z-gXR" secondAttribute="bottom" id="eRd-wd-Xwd"/>
-                            <constraint firstAttribute="trailing" secondItem="gKf-6Z-gXR" secondAttribute="trailing" id="fvV-Fr-nyV"/>
                             <constraint firstItem="gKf-6Z-gXR" firstAttribute="top" secondItem="prX-Ay-GHx" secondAttribute="top" id="gg7-JW-Xe2"/>
+                            <constraint firstItem="1yl-Jy-ZBd" firstAttribute="leading" secondItem="prX-Ay-GHx" secondAttribute="leading" constant="25" id="hRy-Ju-CNL"/>
                             <constraint firstItem="BWe-dd-fdi" firstAttribute="top" secondItem="uUT-mw-d1g" secondAttribute="bottom" constant="50" id="jLo-y7-ciz"/>
+                            <constraint firstAttribute="trailing" secondItem="1yl-Jy-ZBd" secondAttribute="trailing" constant="25" id="lUU-fg-FRH"/>
+                            <constraint firstItem="KFk-3P-xK2" firstAttribute="centerX" secondItem="prX-Ay-GHx" secondAttribute="centerX" id="pDy-JU-kfH"/>
                             <constraint firstItem="BWe-dd-fdi" firstAttribute="centerX" secondItem="prX-Ay-GHx" secondAttribute="centerX" id="zZo-P5-lAi"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="9ar-sW-VRI"/>
-                                <exclude reference="Ti1-yB-HED"/>
-                                <exclude reference="fvV-Fr-nyV"/>
-                                <exclude reference="2iv-mI-8Qc"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
                         <outlet property="appName" destination="pSk-mJ-eHB" id="OkS-QO-ClG"/>
                         <outlet property="appTagLine" destination="Oae-8G-c57" id="P5g-Hj-0c1"/>
+                        <outlet property="tosLabel" destination="KFk-3P-xK2" id="nvw-oy-YIT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QUm-2e-pu4" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -86,6 +108,8 @@
     </scenes>
     <resources>
         <image name="AppLogo" width="120" height="120"/>
+        <image name="create_acc_button" width="325" height="50"/>
+        <image name="facebook_button" width="325" height="50"/>
         <image name="initial_bg" width="902" height="1089"/>
     </resources>
 </document>

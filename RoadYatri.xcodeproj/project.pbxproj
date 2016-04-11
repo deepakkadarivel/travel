@@ -19,6 +19,8 @@
 		00ECFD5E1CBB612E000C9D77 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ECFD5D1CBB612E000C9D77 /* Colors.swift */; };
 		00ECFD601CBB63B5000C9D77 /* Philosopher-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 00ECFD5F1CBB63B5000C9D77 /* Philosopher-Regular.ttf */; };
 		00ECFD651CBB6652000C9D77 /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ECFD641CBB6652000C9D77 /* UILabelExtension.swift */; };
+		00EE6E7B1CBB715C0059699F /* SF-UI-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 00EE6E7A1CBB715C0059699F /* SF-UI-Text-Regular.otf */; };
+		00EE6E7D1CBB718B0059699F /* SF-UI-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 00EE6E7C1CBB718B0059699F /* SF-UI-Text-Medium.otf */; };
 		8B1D0C8232751533CCBDBB6E /* Pods_RoadYatri.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5837750431DFE917319818D9 /* Pods_RoadYatri.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +39,8 @@
 		00ECFD5D1CBB612E000C9D77 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		00ECFD5F1CBB63B5000C9D77 /* Philosopher-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Philosopher-Regular.ttf"; sourceTree = "<group>"; };
 		00ECFD641CBB6652000C9D77 /* UILabelExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
+		00EE6E7A1CBB715C0059699F /* SF-UI-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Text-Regular.otf"; sourceTree = "<group>"; };
+		00EE6E7C1CBB718B0059699F /* SF-UI-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Text-Medium.otf"; sourceTree = "<group>"; };
 		5257B912575D12BD1673A4C7 /* Pods-RoadYatri.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoadYatri.release.xcconfig"; path = "Pods/Target Support Files/Pods-RoadYatri/Pods-RoadYatri.release.xcconfig"; sourceTree = "<group>"; };
 		5837750431DFE917319818D9 /* Pods_RoadYatri.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoadYatri.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE8C683A9E3D5028699CA860 /* Pods-RoadYatri.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoadYatri.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RoadYatri/Pods-RoadYatri.debug.xcconfig"; sourceTree = "<group>"; };
@@ -121,6 +125,8 @@
 				00ECFD5F1CBB63B5000C9D77 /* Philosopher-Regular.ttf */,
 				00ECFD5A1CBB5E15000C9D77 /* FiraSans-Regular.otf */,
 				00ECFD581CBB5DDE000C9D77 /* FiraSans-Light.otf */,
+				00EE6E7A1CBB715C0059699F /* SF-UI-Text-Regular.otf */,
+				00EE6E7C1CBB718B0059699F /* SF-UI-Text-Medium.otf */,
 			);
 			name = Fonts;
 			sourceTree = "<group>";
@@ -228,9 +234,11 @@
 			files = (
 				00ECFD601CBB63B5000C9D77 /* Philosopher-Regular.ttf in Resources */,
 				00ECFD471CBB5550000C9D77 /* LaunchScreen.storyboard in Resources */,
+				00EE6E7B1CBB715C0059699F /* SF-UI-Text-Regular.otf in Resources */,
 				00ECFD5B1CBB5E15000C9D77 /* FiraSans-Regular.otf in Resources */,
 				00ECFD441CBB5550000C9D77 /* Assets.xcassets in Resources */,
 				00ECFD421CBB5550000C9D77 /* Main.storyboard in Resources */,
+				00EE6E7D1CBB718B0059699F /* SF-UI-Text-Medium.otf in Resources */,
 				00ECFD591CBB5DDE000C9D77 /* FiraSans-Light.otf in Resources */,
 				00ECFD511CBB5668000C9D77 /* Initial.storyboard in Resources */,
 			);

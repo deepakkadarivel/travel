@@ -26,6 +26,8 @@
 	<true/>
 	<key>UIAppFonts</key>
 	<array>
+		<string>SF-UI-Text-Medium.otf</string>
+		<string>SF-UI-Text-Regular.otf</string>
 		<string>FiraSans-Regular.otf</string>
 		<string>FiraSans-Light.otf</string>
 		<string>Philosopher-Regular.ttf</string>
