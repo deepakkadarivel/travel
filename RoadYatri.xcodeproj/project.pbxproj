@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00ECFD3D1CBB5550000C9D77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ECFD3C1CBB5550000C9D77 /* AppDelegate.swift */; };
+		00ECFD3F1CBB5550000C9D77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ECFD3E1CBB5550000C9D77 /* ViewController.swift */; };
+		00ECFD421CBB5550000C9D77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00ECFD401CBB5550000C9D77 /* Main.storyboard */; };
+		00ECFD441CBB5550000C9D77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00ECFD431CBB5550000C9D77 /* Assets.xcassets */; };
+		00ECFD471CBB5550000C9D77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00ECFD451CBB5550000C9D77 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00ECFD391CBB5550000C9D77 /* RoadYatri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoadYatri.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00ECFD3C1CBB5550000C9D77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		00ECFD3E1CBB5550000C9D77 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		00ECFD411CBB5550000C9D77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		00ECFD431CBB5550000C9D77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		00ECFD461CBB5550000C9D77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		00ECFD481CBB5550000C9D77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00ECFD361CBB5550000C9D77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00ECFD301CBB5550000C9D77 = {
+			isa = PBXGroup;
+			children = (
+				00ECFD3B1CBB5550000C9D77 /* RoadYatri */,
+				00ECFD3A1CBB5550000C9D77 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		00ECFD3A1CBB5550000C9D77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00ECFD391CBB5550000C9D77 /* RoadYatri.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00ECFD3B1CBB5550000C9D77 /* RoadYatri */ = {
+			isa = PBXGroup;
+			children = (
+				00ECFD3C1CBB5550000C9D77 /* AppDelegate.swift */,
+				00ECFD3E1CBB5550000C9D77 /* ViewController.swift */,
+				00ECFD401CBB5550000C9D77 /* Main.storyboard */,
+				00ECFD431CBB5550000C9D77 /* Assets.xcassets */,
+				00ECFD451CBB5550000C9D77 /* LaunchScreen.storyboard */,
+				00ECFD481CBB5550000C9D77 /* Info.plist */,
+			);
+			path = RoadYatri;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00ECFD381CBB5550000C9D77 /* RoadYatri */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00ECFD4B1CBB5550000C9D77 /* Build configuration list for PBXNativeTarget "RoadYatri" */;
+			buildPhases = (
+				00ECFD351CBB5550000C9D77 /* Sources */,
+				00ECFD361CBB5550000C9D77 /* Frameworks */,
+				00ECFD371CBB5550000C9D77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RoadYatri;
+			productName = RoadYatri;
+			productReference = 00ECFD391CBB5550000C9D77 /* RoadYatri.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00ECFD311CBB5550000C9D77 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = upbeatios;
+				TargetAttributes = {
+					00ECFD381CBB5550000C9D77 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 00ECFD341CBB5550000C9D77 /* Build configuration list for PBXProject "RoadYatri" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 00ECFD301CBB5550000C9D77;
+			productRefGroup = 00ECFD3A1CBB5550000C9D77 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00ECFD381CBB5550000C9D77 /* RoadYatri */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00ECFD371CBB5550000C9D77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00ECFD471CBB5550000C9D77 /* LaunchScreen.storyboard in Resources */,
+				00ECFD441CBB5550000C9D77 /* Assets.xcassets in Resources */,
+				00ECFD421CBB5550000C9D77 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00ECFD351CBB5550000C9D77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00ECFD3F1CBB5550000C9D77 /* ViewController.swift in Sources */,
+				00ECFD3D1CBB5550000C9D77 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		00ECFD401CBB5550000C9D77 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00ECFD411CBB5550000C9D77 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		00ECFD451CBB5550000C9D77 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00ECFD461CBB5550000C9D77 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00ECFD491CBB5550000C9D77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		00ECFD4A1CBB5550000C9D77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		00ECFD4C1CBB5550000C9D77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RoadYatri/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.upbeatios.me.RoadYatri;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		00ECFD4D1CBB5550000C9D77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RoadYatri/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.upbeatios.me.RoadYatri;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00ECFD341CBB5550000C9D77 /* Build configuration list for PBXProject "RoadYatri" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00ECFD491CBB5550000C9D77 /* Debug */,
+				00ECFD4A1CBB5550000C9D77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00ECFD4B1CBB5550000C9D77 /* Build configuration list for PBXNativeTarget "RoadYatri" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00ECFD4C1CBB5550000C9D77 /* Debug */,
+				00ECFD4D1CBB5550000C9D77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00ECFD311CBB5550000C9D77 /* Project object */;
+}
