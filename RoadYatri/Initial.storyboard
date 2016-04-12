@@ -126,7 +126,7 @@
     </scenes>
     <resources>
         <image name="AppLogo" width="120" height="120"/>
-        <image name="facebook_logo" width="16" height="30"/>
+        <image name="facebook_logo" width="11" height="20"/>
         <image name="initial_bg" width="902" height="1089"/>
     </resources>
 </document>

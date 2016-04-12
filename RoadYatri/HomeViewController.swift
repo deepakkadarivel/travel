@@ -8,28 +8,53 @@
 
 import UIKit
 
+let cellIdentifier = "TimelineCell"
+
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    let destinations = Destination.allDestinations()
+    let colors = UIColor.palette()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
+        self.collectionView!.backgroundColor = UIColor.clearColor()
+        self.collectionView!.decelerationRate = UIScrollViewDecelerationRateFast
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        // Navigationbar setup
+        let nav = self.navigationController?.navigationBar
+        nav?.translucent = false
+//        let img = UIImage()
+//        self.navigationController?.navigationBar.shadowImage = img
+//        self.navigationController?.navigationBar.setBackgroundImage(img, forBarMetrics: UIBarMetrics.Default)
+        self.navigationController?.navigationBar.barTintColor = Colors.White
+        self.navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Philosopher", size: 16)!, NSForegroundColorAttributeName: Colors.Black]
+        self.navigationController?.navigationBar.topItem!.title = "ROADYATRI"
     }
-    */
+
+}
+
+
+extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return self.destinations.count
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(cellIdentifier, forIndexPath: indexPath) as! TimelineCollectionViewCell
+        cell.destination = destinations[indexPath.item]
+        return cell
+    }
 
 }

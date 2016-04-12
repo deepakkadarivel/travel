@@ -2,17 +2,15 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "stories copy@1x.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "stories copy@2x.png",
-      "scale" : "2x"
+      "scale" : "2x",
+      "filename" : "Tutorial-04.jpg"
     },
     {
       "idiom" : "universal",
-      "filename" : "stories copy@3x.png",
       "scale" : "3x"
     }
   ],

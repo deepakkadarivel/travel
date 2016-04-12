@@ -3,12 +3,13 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Story View Controller-->
         <scene sceneID="RDj-ay-UsG">
             <objects>
-                <viewController id="B0T-yd-cYM" sceneMemberID="viewController">
+                <viewController id="B0T-yd-cYM" customClass="StoryViewController" customModule="RoadYatri" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TcW-J0-Gql"/>
                         <viewControllerLayoutGuide type="bottom" id="Jx4-Dy-4Dk"/>
@@ -24,10 +25,10 @@
             </objects>
             <point key="canvasLocation" x="1481" y="75"/>
         </scene>
-        <!--View Controller-->
+        <!--Canvas View Controller-->
         <scene sceneID="6GM-Dg-HH4">
             <objects>
-                <viewController id="JEy-kF-mv5" sceneMemberID="viewController">
+                <viewController id="JEy-kF-mv5" customClass="CanvasViewController" customModule="RoadYatri" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7UU-Jb-ITs"/>
                         <viewControllerLayoutGuide type="bottom" id="uUK-7L-4s2"/>
@@ -43,10 +44,10 @@
             </objects>
             <point key="canvasLocation" x="1481" y="829"/>
         </scene>
-        <!--View Controller-->
+        <!--Notification View Controller-->
         <scene sceneID="Gcn-Sb-Cdd">
             <objects>
-                <viewController id="Wws-q1-0Zx" sceneMemberID="viewController">
+                <viewController id="Wws-q1-0Zx" customClass="NotificationViewController" customModule="RoadYatri" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="PpT-ER-oBW"/>
                         <viewControllerLayoutGuide type="bottom" id="TCR-hy-40a"/>
@@ -65,7 +66,7 @@
         <!--Home View Controller-->
         <scene sceneID="h9y-d2-Oju">
             <objects>
-                <viewController storyboardIdentifier="HomeVC" id="oq7-g1-UiX" customClass="HomeViewController" customModule="RoadYatri" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeVC" automaticallyAdjustsScrollViewInsets="NO" id="oq7-g1-UiX" customClass="HomeViewController" customModule="RoadYatri" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="z5R-vk-biA"/>
                         <viewControllerLayoutGuide type="bottom" id="9Ma-ox-Val"/>
@@ -73,9 +74,105 @@
                     <view key="view" contentMode="scaleToFill" id="yTO-QN-mvb">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="aWK-Mt-CtZ">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewLayout key="collectionViewLayout" id="No2-gc-iY7" customClass="UltravisualLayout" customModule="RoadYatri" customModuleProvider="target"/>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TimelineCell" id="VMg-hi-AQW" customClass="TimelineCollectionViewCell" customModule="RoadYatri" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Z3-bz-ahC">
+                                                    <rect key="frame" x="0.0" y="-40" width="200" height="280"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="280" id="Rc7-Ad-QfT"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="elM-KX-ZIp">
+                                                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inspiration" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OgW-V6-cgC">
+                                                    <rect key="frame" x="0.0" y="78" width="200" height="44"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="44" id="bGs-gp-lYD"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="38"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time, Room" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="riQ-Ws-FyL">
+                                                    <rect key="frame" x="0.0" y="122" width="200" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="vep-fF-QvZ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speaker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="24X-FA-puf">
+                                                    <rect key="frame" x="0.0" y="143" width="200" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="ZY7-Md-6vX"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="OgW-V6-cgC" firstAttribute="leading" secondItem="VMg-hi-AQW" secondAttribute="leading" id="4ii-D5-new"/>
+                                            <constraint firstItem="24X-FA-puf" firstAttribute="leading" secondItem="VMg-hi-AQW" secondAttribute="leading" id="7Dv-rB-rco"/>
+                                            <constraint firstAttribute="trailing" secondItem="OgW-V6-cgC" secondAttribute="trailing" id="8dV-Sy-j74"/>
+                                            <constraint firstAttribute="trailing" secondItem="elM-KX-ZIp" secondAttribute="trailing" id="AuY-A6-hir"/>
+                                            <constraint firstItem="riQ-Ws-FyL" firstAttribute="top" secondItem="OgW-V6-cgC" secondAttribute="bottom" id="H94-VG-H5b"/>
+                                            <constraint firstAttribute="trailing" secondItem="24X-FA-puf" secondAttribute="trailing" id="RVa-th-XG9"/>
+                                            <constraint firstAttribute="trailing" secondItem="7Z3-bz-ahC" secondAttribute="trailing" id="a4k-F2-uBD"/>
+                                            <constraint firstItem="elM-KX-ZIp" firstAttribute="top" secondItem="VMg-hi-AQW" secondAttribute="top" id="cx5-sK-bIQ"/>
+                                            <constraint firstItem="7Z3-bz-ahC" firstAttribute="leading" secondItem="VMg-hi-AQW" secondAttribute="leading" id="d9G-lL-SXs"/>
+                                            <constraint firstAttribute="centerY" secondItem="OgW-V6-cgC" secondAttribute="centerY" id="dOZ-ve-xlv"/>
+                                            <constraint firstAttribute="trailing" secondItem="riQ-Ws-FyL" secondAttribute="trailing" id="daX-vb-PBB"/>
+                                            <constraint firstAttribute="centerY" secondItem="7Z3-bz-ahC" secondAttribute="centerY" id="jgb-PK-3yB"/>
+                                            <constraint firstItem="24X-FA-puf" firstAttribute="top" secondItem="riQ-Ws-FyL" secondAttribute="bottom" id="ppH-hy-v7V"/>
+                                            <constraint firstItem="riQ-Ws-FyL" firstAttribute="leading" secondItem="VMg-hi-AQW" secondAttribute="leading" id="u56-f0-3H7"/>
+                                            <constraint firstAttribute="bottom" secondItem="elM-KX-ZIp" secondAttribute="bottom" id="won-GJ-O7I"/>
+                                            <constraint firstItem="elM-KX-ZIp" firstAttribute="leading" secondItem="VMg-hi-AQW" secondAttribute="leading" id="xBd-Ao-FBd"/>
+                                        </constraints>
+                                        <size key="customSize" width="200" height="200"/>
+                                        <connections>
+                                            <outlet property="imageCoverView" destination="elM-KX-ZIp" id="acR-FG-shF"/>
+                                            <outlet property="imageView" destination="7Z3-bz-ahC" id="zTt-Hc-5jY"/>
+                                            <outlet property="speakerLabel" destination="24X-FA-puf" id="wrP-qc-GDm"/>
+                                            <outlet property="timeAndRoomLabel" destination="riQ-Ws-FyL" id="wYy-sQ-LQv"/>
+                                            <outlet property="titleLabel" destination="OgW-V6-cgC" id="Jlf-Sm-xZd"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="oq7-g1-UiX" id="Ogm-Il-2zW"/>
+                                    <outlet property="delegate" destination="oq7-g1-UiX" id="0Zh-eD-AmT"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="aWK-Mt-CtZ" secondAttribute="trailing" constant="-20" id="fdj-AG-kr6"/>
+                            <constraint firstItem="aWK-Mt-CtZ" firstAttribute="top" secondItem="z5R-vk-biA" secondAttribute="bottom" id="iud-A3-ebx"/>
+                            <constraint firstItem="9Ma-ox-Val" firstAttribute="top" secondItem="aWK-Mt-CtZ" secondAttribute="bottom" id="ko1-4h-hHJ"/>
+                            <constraint firstItem="aWK-Mt-CtZ" firstAttribute="leading" secondItem="yTO-QN-mvb" secondAttribute="leadingMargin" constant="-20" id="pvZ-ui-teQ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hLQ-eY-QCc"/>
+                    <connections>
+                        <outlet property="collectionView" destination="aWK-Mt-CtZ" id="SEy-RQ-v9k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AHJ-r8-pIP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -106,7 +203,13 @@
         <scene sceneID="RfN-56-yUA">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IbJ-RD-AET" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="home" id="w8h-Ls-Ohy"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home" selectedImage="home_filled" id="w8h-Ls-Ohy">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.97122925519943237" green="0.20281004905700684" blue="0.41574415564537048" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="hnN-vQ-gnI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -125,7 +228,13 @@
         <scene sceneID="946-lk-mZ9">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6TN-tu-32k" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Stories" image="story" id="SMT-aa-0hV"/>
+                    <tabBarItem key="tabBarItem" title="Stories" image="story" selectedImage="story_filled" id="SMT-aa-0hV">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.97122925519943237" green="0.20281004905700684" blue="0.41574415564537048" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="sOH-IL-Boy">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -144,7 +253,13 @@
         <scene sceneID="hAV-W2-Kuh">
             <objects>
                 <navigationController storyboardIdentifier="TabVC" automaticallyAdjustsScrollViewInsets="NO" id="iyD-WA-O8O" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Canvas" image="canvas" id="Sco-xN-DEZ"/>
+                    <tabBarItem key="tabBarItem" title="Canvas" image="canvas" selectedImage="canvas_filled" id="Sco-xN-DEZ">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.97122925519943237" green="0.20281004905700684" blue="0.41574415564537048" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="354-FA-hhK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -159,10 +274,10 @@
             </objects>
             <point key="canvasLocation" x="669" y="829"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="5Ln-Jk-z8S">
             <objects>
-                <viewController id="PsR-Gz-W0W" sceneMemberID="viewController">
+                <viewController id="PsR-Gz-W0W" customClass="ProfileViewController" customModule="RoadYatri" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cin-Ey-cg0"/>
                         <viewControllerLayoutGuide type="bottom" id="Tb5-ct-FZd"/>
@@ -182,7 +297,13 @@
         <scene sceneID="0mz-Nn-5Gh">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LIc-G3-Keg" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Notification" image="notification" selectedImage="notification_filled" id="ddZ-KL-gMq"/>
+                    <tabBarItem key="tabBarItem" title="Notification" image="notification" selectedImage="notification_filled" id="ddZ-KL-gMq">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.97122925519943237" green="0.20281004905700684" blue="0.41574415564537048" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="RHm-cp-enZ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -201,7 +322,13 @@
         <scene sceneID="CHr-6Q-BYL">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="TZH-za-E3F" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" image="profile" selectedImage="profile_filled" id="7t3-d6-xaW"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="profile" selectedImage="profile_filled" id="7t3-d6-xaW">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.97122925519943237" green="0.20281004905700684" blue="0.41574415564537048" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="eBW-xn-pbo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -219,11 +346,14 @@
     </scenes>
     <resources>
         <image name="canvas" width="22" height="22"/>
+        <image name="canvas_filled" width="50" height="50"/>
         <image name="home" width="50" height="50"/>
+        <image name="home_filled" width="50" height="50"/>
         <image name="notification" width="50" height="50"/>
         <image name="notification_filled" width="50" height="50"/>
         <image name="profile" width="22" height="22"/>
         <image name="profile_filled" width="22" height="22"/>
         <image name="story" width="50" height="50"/>
+        <image name="story_filled" width="50" height="50"/>
     </resources>
 </document>
