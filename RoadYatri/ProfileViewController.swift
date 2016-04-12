@@ -16,7 +16,6 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
         
         self.tableView.rowHeight = 60
-//        self.tableView.estimatedRowHeight = 75
         tableView.tableFooterView = UIView(frame: CGRectZero)
     }
     

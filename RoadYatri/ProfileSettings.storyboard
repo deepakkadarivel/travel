@@ -4,6 +4,16 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="FiraSans-Light.otf">
+            <string>FiraSans-Light</string>
+            <string>FiraSans-Light</string>
+            <string>FiraSans-Light</string>
+        </mutableArray>
+        <mutableArray key="FiraSans-Regular.otf">
+            <string>FiraSans-Regular</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--Profile Settings View Controller-->
         <scene sceneID="kWS-tn-p7Y">
@@ -16,8 +26,116 @@
                     <view key="view" contentMode="scaleToFill" id="SgQ-Ew-JCJ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EEl-GI-HCo">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SettingsHeaderCell" rowHeight="50" id="zhk-w1-Xfu" customClass="SettingsHeaderTableViewCell" customModule="RoadYatri" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zhk-w1-Xfu" id="cYS-7u-LB7">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="49.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Header" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fu-4O-50s">
+                                                    <rect key="frame" x="25" y="18.5" width="550" height="12"/>
+                                                    <fontDescription key="fontDescription" name="FiraSans-Regular" family="Fira Sans" pointSize="10"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.029999999999999999" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="6fu-4O-50s" secondAttribute="trailing" constant="25" id="684-Ik-rIZ"/>
+                                                <constraint firstItem="6fu-4O-50s" firstAttribute="centerY" secondItem="cYS-7u-LB7" secondAttribute="centerY" id="E1M-cv-eAl"/>
+                                                <constraint firstItem="6fu-4O-50s" firstAttribute="leading" secondItem="cYS-7u-LB7" secondAttribute="leading" constant="25" id="Ksd-bi-NRx"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="sectionHeader" destination="6fu-4O-50s" id="THm-V9-wW1"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SettingsGeneralCell" rowHeight="75" id="YTr-LV-d8y" customClass="SettingsGeneralTableViewCell" customModule="RoadYatri" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="78" width="600" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YTr-LV-d8y" id="26a-Uu-6ty">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="74.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SDk-0o-utL">
+                                                    <rect key="frame" x="25" y="12" width="29" height="14.5"/>
+                                                    <fontDescription key="fontDescription" name="FiraSans-Light" family="Fira Sans" pointSize="12"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FuE-hN-j5o">
+                                                    <rect key="frame" x="25" y="38.5" width="550" height="20"/>
+                                                    <fontDescription key="fontDescription" name="FiraSans-Light" family="Fira Sans" pointSize="16"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="FuE-hN-j5o" firstAttribute="top" secondItem="SDk-0o-utL" secondAttribute="bottom" constant="12" id="1IS-T4-Nrs"/>
+                                                <constraint firstItem="FuE-hN-j5o" firstAttribute="leading" secondItem="26a-Uu-6ty" secondAttribute="leading" constant="25" id="1U2-42-c7N"/>
+                                                <constraint firstItem="SDk-0o-utL" firstAttribute="leading" secondItem="26a-Uu-6ty" secondAttribute="leading" constant="25" id="9QJ-gq-v89"/>
+                                                <constraint firstAttribute="trailing" secondItem="FuE-hN-j5o" secondAttribute="trailing" constant="25" id="9sA-1i-RNE"/>
+                                                <constraint firstItem="SDk-0o-utL" firstAttribute="top" secondItem="26a-Uu-6ty" secondAttribute="top" constant="12" id="FE4-js-K8U"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="labelField" destination="SDk-0o-utL" id="lQm-LC-TID"/>
+                                            <outlet property="textInputField" destination="FuE-hN-j5o" id="t0M-FE-Dbv"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SettingsNotificationCell" rowHeight="75" id="hPn-3B-VaP" customClass="SettingsNotificationTableViewCell" customModule="RoadYatri" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="153" width="600" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hPn-3B-VaP" id="hbg-E2-QrT">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="74.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ESH-vI-yMj">
+                                                    <rect key="frame" x="25" y="28" width="476" height="19.5"/>
+                                                    <fontDescription key="fontDescription" name="FiraSans-Light" family="Fira Sans" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ivH-Dm-pqm">
+                                                    <rect key="frame" x="526" y="22" width="51" height="31"/>
+                                                </switch>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ivH-Dm-pqm" firstAttribute="leading" secondItem="ESH-vI-yMj" secondAttribute="trailing" constant="25" id="6ED-qS-lGH"/>
+                                                <constraint firstItem="ivH-Dm-pqm" firstAttribute="centerY" secondItem="hbg-E2-QrT" secondAttribute="centerY" id="6Od-hJ-Vc2"/>
+                                                <constraint firstItem="ESH-vI-yMj" firstAttribute="centerY" secondItem="hbg-E2-QrT" secondAttribute="centerY" id="91X-Fp-0sx"/>
+                                                <constraint firstItem="ESH-vI-yMj" firstAttribute="leading" secondItem="hbg-E2-QrT" secondAttribute="leading" constant="25" id="t7n-4x-Gw8"/>
+                                                <constraint firstAttribute="trailing" secondItem="ivH-Dm-pqm" secondAttribute="trailing" constant="25" id="xIP-4u-4Wf"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="labelField" destination="ESH-vI-yMj" id="HYQ-QW-kui"/>
+                                            <outlet property="notifiacationControl" destination="ivH-Dm-pqm" id="r9S-4Y-2j2"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="4Iy-eh-iI9" id="vX6-Xn-HO0"/>
+                                    <outlet property="delegate" destination="4Iy-eh-iI9" id="UDh-Vl-qBr"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EEl-GI-HCo" firstAttribute="top" secondItem="qwg-KU-K7x" secondAttribute="bottom" id="O3e-uB-wt1"/>
+                            <constraint firstAttribute="trailing" secondItem="EEl-GI-HCo" secondAttribute="trailing" id="Sfn-im-hvP"/>
+                            <constraint firstItem="EEl-GI-HCo" firstAttribute="leading" secondItem="SgQ-Ew-JCJ" secondAttribute="leading" id="qxf-Rg-0Vb"/>
+                            <constraint firstItem="1ZD-OJ-bRc" firstAttribute="top" secondItem="EEl-GI-HCo" secondAttribute="bottom" id="trx-Fp-xxI"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="EEl-GI-HCo" id="B35-ee-lPA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B0X-FG-iB1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

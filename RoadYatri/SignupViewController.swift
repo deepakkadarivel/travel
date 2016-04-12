@@ -14,7 +14,7 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var appLogo: UIImageView!
     @IBOutlet weak var appName: UILabel!
     @IBOutlet weak var appTagLine: UILabel!
-    @IBOutlet weak var loginLabel: FRHyperLabel!
+    @IBOutlet weak var loginLabel: UILabel!
     @IBOutlet weak var passwordView: UIView!
     @IBOutlet weak var emailView: UIView!
     @IBOutlet weak var userNameView: UIView!
@@ -35,43 +35,20 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
         self.passwordView.applyCornerRadius(self.passwordView, cornerRadius: self.passwordView.frame.size.height / 2, borderColor: Colors.White)
         self.createAccButton.applyCornerRadius(self.createAccButton, cornerRadius: self.createAccButton.frame.size.height / 2, borderColor: UIColor.clearColor())
         
-        // MARK: - Login link Text Formatting
-        //Step 1: Setup Label value and attribues
-        loginLabel.numberOfLines = 0;
-        
-        let string = "Already have an account? Login"
-        
-        let attributes = [NSForegroundColorAttributeName: UIColor.whiteColor(),
-                          NSFontAttributeName: UIFont.preferredFontForTextStyle(UIFontTextStyleFootnote)]
-        
-        loginLabel.attributedText = NSAttributedString(string: string, attributes: attributes)
-        
-        //Step 2: Define a selection handler block
-        let handler = {
-            (hyperLabel: FRHyperLabel!, substring: String!) -> Void in
-            switch substring {
-            case "Login":
-                self.animateLogin()
-                break
-            default:
-                break
-            }
-            
-        }
-        //Step 3: Add link substrings
-        loginLabel.setLinksForSubstrings(["Login"], withLinkHandler: handler)
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         //Gradient Layer
         self.view.addBackgroundGradientLayer(self.view, subView: self.view, colorTop: Colors.Transparent, colorBottom: Colors.Black)
-
+        //Tap Gesture for login
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(SignupViewController.tapLogin(_:)))
+        loginLabel.addGestureRecognizer(tapGesture)
     }
     
     override func viewDidAppear(animated: Bool) {
-
+        
         emailTextField.delegate = self
         nameTextField.delegate = self
         passwordTextField.delegate = self
@@ -81,11 +58,6 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(SignupViewController.keyboardWillShow(_:)), name:UIKeyboardWillShowNotification, object: nil);
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(SignupViewController.keyboardWillHide(_:)), name:UIKeyboardWillHideNotification, object: nil);
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
@@ -97,12 +69,10 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
     }
     
     func animateLogin() {
-        UIView.animateWithDuration(0.5, animations: { 
+        UIView.animateWithDuration(0.5, animations: {
             self.userNameView.alpha = 0
             self.loginLabel.alpha = 0
-            self.appLogo.alpha = 0
             self.userNameView.userInteractionEnabled = false
-            self.loginLabel.userInteractionEnabled = false
             self.createAccButton.setTitle("GET STARTED", forState: .Normal)
             }, completion: nil)
     }
@@ -128,7 +98,6 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
     }
     
     func dismissKeyboard() {
-        //Causes the view (or one of its embedded text fields) to resign the first responder status.
         view.endEditing(true)
         self.appName.alpha = 1
         self.appTagLine.alpha = 1
@@ -139,14 +108,13 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
         textField.resignFirstResponder()
         return true
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func signup(sender: AnyObject) {
+        NavigationUtil.gotoHomeScreen()
     }
-    */
-
+    
+    func tapLogin(gesture: UITapGestureRecognizer) {
+        self.animateLogin()
+    }
+    
 }

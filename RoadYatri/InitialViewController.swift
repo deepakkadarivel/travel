@@ -42,10 +42,10 @@ class InitialViewController: UIViewController {
             (hyperLabel: FRHyperLabel!, substring: String!) -> Void in
             switch substring {
             case "Privacy Policy":
-                //
+                print("Privacy Policy")
                 break
             case "Terms of Use.":
-                //
+                print("Terms of user")
                 break
             default:
                 break

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		001E06F91CBD543900ADCF41 /* SettingsHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001E06F81CBD543900ADCF41 /* SettingsHeaderTableViewCell.swift */; };
+		001E06FB1CBD544700ADCF41 /* SettingsGeneralTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001E06FA1CBD544700ADCF41 /* SettingsGeneralTableViewCell.swift */; };
+		001E06FD1CBD545500ADCF41 /* SettingsNotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001E06FC1CBD545500ADCF41 /* SettingsNotificationTableViewCell.swift */; };
 		005BDF391CBCD6C2006F4283 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005BDF381CBCD6C2006F4283 /* Session.swift */; };
 		005BDF3B1CBCD6F8006F4283 /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005BDF3A1CBCD6F8006F4283 /* Destination.swift */; };
 		005BDF3E1CBCD779006F4283 /* UIColor+Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005BDF3D1CBCD779006F4283 /* UIColor+Palette.swift */; };
@@ -46,6 +49,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		001E06F81CBD543900ADCF41 /* SettingsHeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		001E06FA1CBD544700ADCF41 /* SettingsGeneralTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsGeneralTableViewCell.swift; sourceTree = "<group>"; };
+		001E06FC1CBD545500ADCF41 /* SettingsNotificationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsNotificationTableViewCell.swift; sourceTree = "<group>"; };
 		005BDF381CBCD6C2006F4283 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		005BDF3A1CBCD6F8006F4283 /* Destination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
 		005BDF3D1CBCD779006F4283 /* UIColor+Palette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Palette.swift"; sourceTree = "<group>"; };
@@ -179,6 +185,9 @@
 			children = (
 				005BDF541CBD2BCD006F4283 /* ProfileHeaderTableViewCell.swift */,
 				005BDF561CBD2BD7006F4283 /* ProfileTableViewCell.swift */,
+				001E06F81CBD543900ADCF41 /* SettingsHeaderTableViewCell.swift */,
+				001E06FA1CBD544700ADCF41 /* SettingsGeneralTableViewCell.swift */,
+				001E06FC1CBD545500ADCF41 /* SettingsNotificationTableViewCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -516,10 +525,13 @@
 				00ECFD531CBB5683000C9D77 /* InitialViewController.swift in Sources */,
 				00ECFD5E1CBB612E000C9D77 /* Colors.swift in Sources */,
 				00ECFD651CBB6652000C9D77 /* UILabelExtension.swift in Sources */,
+				001E06FD1CBD545500ADCF41 /* SettingsNotificationTableViewCell.swift in Sources */,
 				00FFF3941CBC29CE00BD8665 /* HomeViewController.swift in Sources */,
 				00EE6E881CBB8FAF0059699F /* NavigationUtil.swift in Sources */,
 				005BDF571CBD2BD7006F4283 /* ProfileTableViewCell.swift in Sources */,
+				001E06FB1CBD544700ADCF41 /* SettingsGeneralTableViewCell.swift in Sources */,
 				005BDF401CBCD790006F4283 /* UIImage+Decompression.swift in Sources */,
+				001E06F91CBD543900ADCF41 /* SettingsHeaderTableViewCell.swift in Sources */,
 				007335AE1CBCC0D700EDB1A8 /* ProfileViewController.swift in Sources */,
 				005BDF3B1CBCD6F8006F4283 /* Destination.swift in Sources */,
 				005BDF521CBD2235006F4283 /* ProfileSettingsViewController.swift in Sources */,
