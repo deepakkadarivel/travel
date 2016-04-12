@@ -10,10 +10,13 @@ import UIKit
 
 class StoryViewController: UIViewController {
 
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.tableView.rowHeight = 220
+        tableView.tableFooterView = UIView(frame: CGRectZero)
     }
 
     override func viewDidAppear(animated: Bool) {
@@ -22,12 +25,31 @@ class StoryViewController: UIViewController {
         
         let nav = self.navigationController?.navigationBar
         nav?.translucent = false
-        //        let img = UIImage()
-        //        self.navigationController?.navigationBar.shadowImage = img
-        //        self.navigationController?.navigationBar.setBackgroundImage(img, forBarMetrics: UIBarMetrics.Default)
         self.navigationController?.navigationBar.barTintColor = Colors.White
         self.navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Philosopher", size: 16)!, NSForegroundColorAttributeName: Colors.Black]
-//        self.navigationController?.navigationBar.topItem!.title = "STORY"
+        self.navigationController?.navigationBar.topItem!.title = "STORIES"
     }
 
+}
+
+extension StoryViewController: UITableViewDelegate, UITableViewDataSource {
+    // MARK: - Table view data source
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return 2
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        // Configure the cell...
+        let cell = tableView.dequeueReusableCellWithIdentifier("StoryCell", forIndexPath: indexPath) as! StoryTableViewCell
+        cell.selectionStyle = UITableViewCellSelectionStyle.None
+        cell.setup(indexPath.row)
+        return cell
+    }
 }

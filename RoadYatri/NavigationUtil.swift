@@ -10,6 +10,14 @@ import Foundation
 import UIKit
 
 class NavigationUtil {
+    
+    static func gotoInitialVC(vc: UIViewController) {
+        let storyboard : UIStoryboard = UIStoryboard(name: "Initial", bundle: nil)
+        let destination = storyboard.instantiateViewControllerWithIdentifier("InitialVC") as! InitialViewController
+        destination.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
+        vc.presentViewController(destination, animated: true, completion: nil)
+    }
+    
     static func gotoSignup(vc: UIViewController) {
         let storyboard : UIStoryboard = UIStoryboard(name: "Signup", bundle: nil)
         let destination = storyboard.instantiateViewControllerWithIdentifier("SignupVC") as! SignupViewController

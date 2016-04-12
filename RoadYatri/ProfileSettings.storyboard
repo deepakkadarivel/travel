@@ -69,7 +69,7 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FuE-hN-j5o">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="justified" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FuE-hN-j5o">
                                                     <rect key="frame" x="25" y="38.5" width="550" height="20"/>
                                                     <fontDescription key="fontDescription" name="FiraSans-Light" family="Fira Sans" pointSize="16"/>
                                                     <textInputTraits key="textInputTraits"/>

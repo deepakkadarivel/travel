@@ -41,7 +41,7 @@ class ProfileSettingsViewController: UIViewController {
     }
     
     func logoutMethod() {
-        print("logout")
+        NavigationUtil.gotoInitialVC(self)
     }
     
     func dismissMethod() {
