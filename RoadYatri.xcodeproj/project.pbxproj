@@ -17,6 +17,8 @@
 		005BDF4D1CBD1B63006F4283 /* DancingScript-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 005BDF4C1CBD1B63006F4283 /* DancingScript-Regular.otf */; };
 		005BDF4F1CBD2005006F4283 /* ProfileSettings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 005BDF4E1CBD2005006F4283 /* ProfileSettings.storyboard */; };
 		005BDF521CBD2235006F4283 /* ProfileSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005BDF511CBD2235006F4283 /* ProfileSettingsViewController.swift */; };
+		005BDF551CBD2BCD006F4283 /* ProfileHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005BDF541CBD2BCD006F4283 /* ProfileHeaderTableViewCell.swift */; };
+		005BDF571CBD2BD7006F4283 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005BDF561CBD2BD7006F4283 /* ProfileTableViewCell.swift */; };
 		007335A31CBCBFAC00EDB1A8 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007335A21CBCBFAC00EDB1A8 /* StoryViewController.swift */; };
 		007335A61CBCBFF400EDB1A8 /* CanvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007335A51CBCBFF400EDB1A8 /* CanvasViewController.swift */; };
 		007335A91CBCC01E00EDB1A8 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007335A81CBCC01E00EDB1A8 /* NotificationViewController.swift */; };
@@ -54,6 +56,8 @@
 		005BDF4C1CBD1B63006F4283 /* DancingScript-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DancingScript-Regular.otf"; sourceTree = "<group>"; };
 		005BDF4E1CBD2005006F4283 /* ProfileSettings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProfileSettings.storyboard; sourceTree = "<group>"; };
 		005BDF511CBD2235006F4283 /* ProfileSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileSettingsViewController.swift; sourceTree = "<group>"; };
+		005BDF541CBD2BCD006F4283 /* ProfileHeaderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		005BDF561CBD2BD7006F4283 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		007335A21CBCBFAC00EDB1A8 /* StoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
 		007335A51CBCBFF400EDB1A8 /* CanvasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasViewController.swift; sourceTree = "<group>"; };
 		007335A81CBCC01E00EDB1A8 /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
@@ -170,6 +174,15 @@
 			name = ProfileSettings;
 			sourceTree = "<group>";
 		};
+		005BDF531CBD2BAD006F4283 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				005BDF541CBD2BCD006F4283 /* ProfileHeaderTableViewCell.swift */,
+				005BDF561CBD2BD7006F4283 /* ProfileTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		007335A11CBCBF9E00EDB1A8 /* Story */ = {
 			isa = PBXGroup;
 			children = (
@@ -223,6 +236,7 @@
 		00ECFD3B1CBB5550000C9D77 /* RoadYatri */ = {
 			isa = PBXGroup;
 			children = (
+				005BDF531CBD2BAD006F4283 /* Views */,
 				005BDF491CBCE067006F4283 /* Layouts */,
 				005BDF431CBCD827006F4283 /* Supporting Files */,
 				005BDF421CBCD7FD006F4283 /* Others */,
@@ -493,6 +507,7 @@
 				007335A31CBCBFAC00EDB1A8 /* StoryViewController.swift in Sources */,
 				007335B21CBCCBF200EDB1A8 /* TimelineCollectionViewCell.swift in Sources */,
 				007335A91CBCC01E00EDB1A8 /* NotificationViewController.swift in Sources */,
+				005BDF551CBD2BCD006F4283 /* ProfileHeaderTableViewCell.swift in Sources */,
 				00EE6E7F1CBB7B780059699F /* UIViewExtension.swift in Sources */,
 				005BDF391CBCD6C2006F4283 /* Session.swift in Sources */,
 				005BDF4B1CBCE073006F4283 /* UltravisualLayout.swift in Sources */,
@@ -503,6 +518,7 @@
 				00ECFD651CBB6652000C9D77 /* UILabelExtension.swift in Sources */,
 				00FFF3941CBC29CE00BD8665 /* HomeViewController.swift in Sources */,
 				00EE6E881CBB8FAF0059699F /* NavigationUtil.swift in Sources */,
+				005BDF571CBD2BD7006F4283 /* ProfileTableViewCell.swift in Sources */,
 				005BDF401CBCD790006F4283 /* UIImage+Decompression.swift in Sources */,
 				007335AE1CBCC0D700EDB1A8 /* ProfileViewController.swift in Sources */,
 				005BDF3B1CBCD6F8006F4283 /* Destination.swift in Sources */,
