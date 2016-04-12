@@ -14,6 +14,7 @@
 		005BDF461CBCDB61006F4283 /* Destinations.plist in Resources */ = {isa = PBXBuildFile; fileRef = 005BDF451CBCDB61006F4283 /* Destinations.plist */; };
 		005BDF481CBCDCD3006F4283 /* Destinations.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 005BDF471CBCDCD3006F4283 /* Destinations.xcassets */; };
 		005BDF4B1CBCE073006F4283 /* UltravisualLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005BDF4A1CBCE073006F4283 /* UltravisualLayout.swift */; };
+		005BDF4D1CBD1B63006F4283 /* DancingScript-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 005BDF4C1CBD1B63006F4283 /* DancingScript-Regular.otf */; };
 		007335A31CBCBFAC00EDB1A8 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007335A21CBCBFAC00EDB1A8 /* StoryViewController.swift */; };
 		007335A61CBCBFF400EDB1A8 /* CanvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007335A51CBCBFF400EDB1A8 /* CanvasViewController.swift */; };
 		007335A91CBCC01E00EDB1A8 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007335A81CBCC01E00EDB1A8 /* NotificationViewController.swift */; };
@@ -48,6 +49,7 @@
 		005BDF451CBCDB61006F4283 /* Destinations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Destinations.plist; sourceTree = "<group>"; };
 		005BDF471CBCDCD3006F4283 /* Destinations.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Destinations.xcassets; sourceTree = "<group>"; };
 		005BDF4A1CBCE073006F4283 /* UltravisualLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UltravisualLayout.swift; sourceTree = "<group>"; };
+		005BDF4C1CBD1B63006F4283 /* DancingScript-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DancingScript-Regular.otf"; sourceTree = "<group>"; };
 		007335A21CBCBFAC00EDB1A8 /* StoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
 		007335A51CBCBFF400EDB1A8 /* CanvasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasViewController.swift; sourceTree = "<group>"; };
 		007335A81CBCC01E00EDB1A8 /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +113,8 @@
 		005BDF411CBCD7E3006F4283 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				00ECFD561CBB5C1D000C9D77 /* Sounds */,
+				00ECFD551CBB5C14000C9D77 /* Fonts */,
 				005BDF471CBCDCD3006F4283 /* Destinations.xcassets */,
 				00ECFD431CBB5550000C9D77 /* Assets.xcassets */,
 				005BDF451CBCDB61006F4283 /* Destinations.plist */,
@@ -243,8 +247,6 @@
 			children = (
 				00ECFD611CBB6406000C9D77 /* Views */,
 				00ECFD5C1CBB611E000C9D77 /* Colors */,
-				00ECFD561CBB5C1D000C9D77 /* Sounds */,
-				00ECFD551CBB5C14000C9D77 /* Fonts */,
 			);
 			name = Extras;
 			sourceTree = "<group>";
@@ -257,6 +259,7 @@
 				00ECFD581CBB5DDE000C9D77 /* FiraSans-Light.otf */,
 				00EE6E7A1CBB715C0059699F /* SF-UI-Text-Regular.otf */,
 				00EE6E7C1CBB718B0059699F /* SF-UI-Text-Medium.otf */,
+				005BDF4C1CBD1B63006F4283 /* DancingScript-Regular.otf */,
 			);
 			name = Fonts;
 			sourceTree = "<group>";
@@ -403,6 +406,7 @@
 				00ECFD601CBB63B5000C9D77 /* Philosopher-Regular.ttf in Resources */,
 				00FFF3911CBC20AD00BD8665 /* TabBar.storyboard in Resources */,
 				00ECFD471CBB5550000C9D77 /* LaunchScreen.storyboard in Resources */,
+				005BDF4D1CBD1B63006F4283 /* DancingScript-Regular.otf in Resources */,
 				00EE6E7B1CBB715C0059699F /* SF-UI-Text-Regular.otf in Resources */,
 				005BDF481CBCDCD3006F4283 /* Destinations.xcassets in Resources */,
 				00ECFD5B1CBB5E15000C9D77 /* FiraSans-Regular.otf in Resources */,

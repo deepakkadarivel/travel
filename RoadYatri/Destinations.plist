@@ -4,11 +4,11 @@
 <array>
 	<dict>
 		<key>Title</key>
-		<string>Munnar</string>
+		<string>Agra</string>
 		<key>Subs</key>
-		<string>South India&apos;s largest tea-growing region</string>
+		<string>is the majesty of the Taj</string>
 		<key>Background</key>
-		<string>Inspiration-02</string>
+		<string>Inspiration-11</string>
 	</dict>
 	<dict>
 		<key>Title</key>
@@ -68,11 +68,11 @@
 	</dict>
 	<dict>
 		<key>Title</key>
-		<string>Agra</string>
+		<string>Munnar</string>
 		<key>Subs</key>
-		<string>is the majesty of the Taj</string>
+		<string>South India&apos;s largest tea-growing region</string>
 		<key>Background</key>
-		<string>Inspiration-11</string>
+		<string>Inspiration-02</string>
 	</dict>
 	<dict>
 		<key>Title</key>
