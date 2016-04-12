@@ -5,6 +5,14 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="FiraSans-Light.otf">
+            <string>FiraSans-Light</string>
+        </mutableArray>
+        <mutableArray key="FiraSans-Regular.otf">
+            <string>FiraSans-Regular</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--Story View Controller-->
         <scene sceneID="RDj-ay-UsG">
@@ -97,30 +105,15 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 </view>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inspiration" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OgW-V6-cgC">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="TITLE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OgW-V6-cgC">
                                                     <rect key="frame" x="0.0" y="78" width="200" height="44"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="44" id="bGs-gp-lYD"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="38"/>
+                                                    <fontDescription key="fontDescription" name="FiraSans-Regular" family="Fira Sans" pointSize="38"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time, Room" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="riQ-Ws-FyL">
-                                                    <rect key="frame" x="0.0" y="122" width="200" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="21" id="vep-fF-QvZ"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
-                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speaker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="24X-FA-puf">
-                                                    <rect key="frame" x="0.0" y="143" width="200" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="21" id="ZY7-Md-6vX"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="subs" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="riQ-Ws-FyL">
+                                                    <rect key="frame" x="0.0" y="122" width="200" height="19.5"/>
+                                                    <fontDescription key="fontDescription" name="FiraSans-Light" family="Fira Sans" pointSize="16"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -129,18 +122,15 @@
                                         </view>
                                         <constraints>
                                             <constraint firstItem="OgW-V6-cgC" firstAttribute="leading" secondItem="VMg-hi-AQW" secondAttribute="leading" id="4ii-D5-new"/>
-                                            <constraint firstItem="24X-FA-puf" firstAttribute="leading" secondItem="VMg-hi-AQW" secondAttribute="leading" id="7Dv-rB-rco"/>
                                             <constraint firstAttribute="trailing" secondItem="OgW-V6-cgC" secondAttribute="trailing" id="8dV-Sy-j74"/>
                                             <constraint firstAttribute="trailing" secondItem="elM-KX-ZIp" secondAttribute="trailing" id="AuY-A6-hir"/>
                                             <constraint firstItem="riQ-Ws-FyL" firstAttribute="top" secondItem="OgW-V6-cgC" secondAttribute="bottom" id="H94-VG-H5b"/>
-                                            <constraint firstAttribute="trailing" secondItem="24X-FA-puf" secondAttribute="trailing" id="RVa-th-XG9"/>
                                             <constraint firstAttribute="trailing" secondItem="7Z3-bz-ahC" secondAttribute="trailing" id="a4k-F2-uBD"/>
                                             <constraint firstItem="elM-KX-ZIp" firstAttribute="top" secondItem="VMg-hi-AQW" secondAttribute="top" id="cx5-sK-bIQ"/>
                                             <constraint firstItem="7Z3-bz-ahC" firstAttribute="leading" secondItem="VMg-hi-AQW" secondAttribute="leading" id="d9G-lL-SXs"/>
                                             <constraint firstAttribute="centerY" secondItem="OgW-V6-cgC" secondAttribute="centerY" id="dOZ-ve-xlv"/>
                                             <constraint firstAttribute="trailing" secondItem="riQ-Ws-FyL" secondAttribute="trailing" id="daX-vb-PBB"/>
                                             <constraint firstAttribute="centerY" secondItem="7Z3-bz-ahC" secondAttribute="centerY" id="jgb-PK-3yB"/>
-                                            <constraint firstItem="24X-FA-puf" firstAttribute="top" secondItem="riQ-Ws-FyL" secondAttribute="bottom" id="ppH-hy-v7V"/>
                                             <constraint firstItem="riQ-Ws-FyL" firstAttribute="leading" secondItem="VMg-hi-AQW" secondAttribute="leading" id="u56-f0-3H7"/>
                                             <constraint firstAttribute="bottom" secondItem="elM-KX-ZIp" secondAttribute="bottom" id="won-GJ-O7I"/>
                                             <constraint firstItem="elM-KX-ZIp" firstAttribute="leading" secondItem="VMg-hi-AQW" secondAttribute="leading" id="xBd-Ao-FBd"/>
@@ -149,7 +139,6 @@
                                         <connections>
                                             <outlet property="imageCoverView" destination="elM-KX-ZIp" id="acR-FG-shF"/>
                                             <outlet property="imageView" destination="7Z3-bz-ahC" id="zTt-Hc-5jY"/>
-                                            <outlet property="speakerLabel" destination="24X-FA-puf" id="wrP-qc-GDm"/>
                                             <outlet property="timeAndRoomLabel" destination="riQ-Ws-FyL" id="wYy-sQ-LQv"/>
                                             <outlet property="titleLabel" destination="OgW-V6-cgC" id="Jlf-Sm-xZd"/>
                                         </connections>

@@ -4,181 +4,121 @@
 <array>
 	<dict>
 		<key>Title</key>
-		<string>Finishing</string>
-		<key>Speaker</key>
-		<string>Kim Pedersen</string>
-		<key>Room</key>
-		<string>The Grid</string>
-		<key>Time</key>
-		<string>Feb 6, 4:45</string>
+		<string>Munnar</string>
+		<key>Subs</key>
+		<string>South India&apos;s largest tea-growing region</string>
 		<key>Background</key>
 		<string>Inspiration-02</string>
 	</dict>
 	<dict>
 		<key>Title</key>
-		<string>Craftsmanship</string>
-		<key>Speaker</key>
-		<string>Chris Wagner</string>
-		<key>Room</key>
-		<string>Metropolitan Center</string>
-		<key>Time</key>
-		<string>Feb 6, 4:45</string>
+		<string>Srinagar &amp; the Kashmir Valley</string>
+		<key>Subs</key>
+		<string>is the mirror to the mountains</string>
 		<key>Background</key>
 		<string>Inspiration-03</string>
 	</dict>
 	<dict>
 		<key>Title</key>
-		<string>Opportunity</string>
-		<key>Speaker</key>
-		<string>Jake Gundersen</string>
-		<key>Room</key>
-		<string>The Hill</string>
-		<key>Time</key>
-		<string>Feb 6, 5:15</string>
+		<string>Kerala</string>
+		<key>Subs</key>
+		<string>is a tropical symphony</string>
 		<key>Background</key>
 		<string>Inspiration-05</string>
 	</dict>
 	<dict>
 		<key>Title</key>
-		<string>Starting Over</string>
-		<key>Speaker</key>
-		<string>Ellen Shapiro</string>
-		<key>Room</key>
-		<string>The Grid</string>
-		<key>Time</key>
-		<string>Feb 6, 5:15</string>
+		<string>Hampi</string>
+		<key>Subs</key>
+		<string>is a fantasy world of rocks and ruins</string>
 		<key>Background</key>
 		<string>Inspiration-06</string>
 	</dict>
 	<dict>
 		<key>Title</key>
-		<string>Identity I</string>
-		<key>Speaker</key>
-		<string>Vicki Wenderlich</string>
-		<key>Room</key>
-		<string>Metropolitan Center</string>
-		<key>Time</key>
-		<string>Feb 6, 5:15</string>
+		<string>Ooty</string>
+		<key>Subs</key>
+		<string>Udhagamandalam</string>
 		<key>Background</key>
 		<string>Inspiration-07</string>
 	</dict>
 	<dict>
 		<key>Title</key>
-		<string>Contributing</string>
-		<key>Speaker</key>
-		<string>Ryan Nystrom</string>
-		<key>Room</key>
-		<string>The Hill</string>
-		<key>Time</key>
-		<string>Feb 6, 5:45</string>
+		<string>Kodaikanal</string>
+		<key>Subs</key>
+		<string>Kodai is the ‘Princess of Hill Stations’</string>
 		<key>Background</key>
 		<string>Inspiration-08</string>
 	</dict>
 	<dict>
 		<key>Title</key>
-		<string>Commitment</string>
-		<key>Speaker</key>
-		<string>Brian Moakley</string>
-		<key>Room</key>
-		<string>The Grid</string>
-		<key>Time</key>
-		<string>Feb 6, 5:45</string>
+		<string>Ajanta</string>
+		<key>Subs</key>
+		<string>UNESCO World Heritage Site</string>
 		<key>Background</key>
 		<string>Inspiration-09</string>
 	</dict>
 	<dict>
 		<key>Title</key>
-		<string>Identity II</string>
-		<key>Speaker</key>
-		<string>Alexis Gallagher</string>
-		<key>Room</key>
-		<string>Metropolitan Center</string>
-		<key>Time</key>
-		<string>Feb 6, 5:45</string>
+		<string>Ellora</string>
+		<key>Subs</key>
+		<string>UNESCO World Heritage Site</string>
 		<key>Background</key>
 		<string>Inspiration-10</string>
 	</dict>
 	<dict>
 		<key>Title</key>
-		<string>Business</string>
-		<key>Speaker</key>
-		<string>Cesare Rocchi</string>
-		<key>Room</key>
-		<string>The Hill</string>
-		<key>Time</key>
-		<string>Feb 7, 3:45</string>
+		<string>Agra</string>
+		<key>Subs</key>
+		<string>is the majesty of the Taj</string>
 		<key>Background</key>
 		<string>Inspiration-11</string>
 	</dict>
 	<dict>
 		<key>Title</key>
-		<string>Devsign</string>
-		<key>Speaker</key>
-		<string>Ricardo Rendon Cepeda</string>
-		<key>Room</key>
-		<string>The Grid</string>
-		<key>Time</key>
-		<string>Feb 7, 3:45</string>
+		<string>Goa</string>
+		<key>Subs</key>
+		<string>is sun, sand and spices</string>
 		<key>Background</key>
 		<string>Inspiration-12</string>
 	</dict>
 	<dict>
 		<key>Title</key>
-		<string>Possibility</string>
-		<key>Speaker</key>
-		<string>Tammy Coron</string>
-		<key>Room</key>
-		<string>The Hill</string>
-		<key>Time</key>
-		<string>Feb 6, 4:45</string>
+		<string>Lakshadweep</string>
+		<key>Subs</key>
+		<string>white-sand-skirted coral islands</string>
 		<key>Background</key>
 		<string>Inspiration-01</string>
 	</dict>
 	<dict>
 		<key>Title</key>
-		<string>Folklore</string>
-		<key>Speaker</key>
-		<string>Marin Todorov</string>
-		<key>Room</key>
-		<string>Metropolitan Center</string>
-		<key>Time</key>
-		<string>Feb 7, 3:45</string>
+		<string>Rajasthan</string>
+		<key>Subs</key>
+		<string>is a ride on the sands of time</string>
 		<key>Background</key>
 		<string>Inspiration-13</string>
 	</dict>
 	<dict>
 		<key>Title</key>
-		<string>Math Isn&apos;t Hard</string>
-		<key>Speaker</key>
-		<string>Matthijs Hollemans</string>
-		<key>Room</key>
-		<string>The Hill</string>
-		<key>Time</key>
-		<string>Feb 7, 4:15</string>
+		<string>Pokhara</string>
+		<key>Subs</key>
+		<string>is a mirror to the Himalaya</string>
 		<key>Background</key>
 		<string>Inspiration-14</string>
 	</dict>
 	<dict>
 		<key>Title</key>
-		<string>Cognition</string>
-		<key>Speaker</key>
-		<string>Cesare Rocchi</string>
-		<key>Room</key>
-		<string>The Grid</string>
-		<key>Time</key>
-		<string>Feb 7, 4:15</string>
+		<string>Ladakh</string>
+		<key>Subs</key>
+		<string>Bounded by the Karakoram and Himalayan mountains</string>
 		<key>Background</key>
 		<string>Inspiration-15</string>
 	</dict>
 	<dict>
 		<key>Title</key>
-		<string>NSBrief</string>
-		<key>Speaker</key>
-		<string>Saul Mora</string>
-		<key>Room</key>
-		<string>Metropolitan Center</string>
-		<key>Time</key>
-		<string>Feb 7, 4:15</string>
+		<string>Bagan</string>
+		<key>Subs</key>
+		<string>One of Myanmar’s main attractions</string>
 		<key>Background</key>
 		<string>Inspiration-16</string>
 	</dict>
