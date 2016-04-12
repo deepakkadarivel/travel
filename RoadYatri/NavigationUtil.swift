@@ -24,4 +24,11 @@ class NavigationUtil {
         appDelegate.window?.rootViewController = tabBarVC
     }
     
+    static func gotoProfileSettings(vc: UIViewController) {
+        let storyboard : UIStoryboard = UIStoryboard(name: "ProfileSettings", bundle: nil)
+        let destination = storyboard.instantiateViewControllerWithIdentifier("ProfileSettingsVC") as! ProfileSettingsViewController
+        let navigationController = UINavigationController(rootViewController: destination)
+        vc.presentViewController(navigationController, animated: true, completion: nil)
+    }
+    
 }

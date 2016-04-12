@@ -15,6 +15,8 @@
 		005BDF481CBCDCD3006F4283 /* Destinations.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 005BDF471CBCDCD3006F4283 /* Destinations.xcassets */; };
 		005BDF4B1CBCE073006F4283 /* UltravisualLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005BDF4A1CBCE073006F4283 /* UltravisualLayout.swift */; };
 		005BDF4D1CBD1B63006F4283 /* DancingScript-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 005BDF4C1CBD1B63006F4283 /* DancingScript-Regular.otf */; };
+		005BDF4F1CBD2005006F4283 /* ProfileSettings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 005BDF4E1CBD2005006F4283 /* ProfileSettings.storyboard */; };
+		005BDF521CBD2235006F4283 /* ProfileSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005BDF511CBD2235006F4283 /* ProfileSettingsViewController.swift */; };
 		007335A31CBCBFAC00EDB1A8 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007335A21CBCBFAC00EDB1A8 /* StoryViewController.swift */; };
 		007335A61CBCBFF400EDB1A8 /* CanvasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007335A51CBCBFF400EDB1A8 /* CanvasViewController.swift */; };
 		007335A91CBCC01E00EDB1A8 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007335A81CBCC01E00EDB1A8 /* NotificationViewController.swift */; };
@@ -50,6 +52,8 @@
 		005BDF471CBCDCD3006F4283 /* Destinations.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Destinations.xcassets; sourceTree = "<group>"; };
 		005BDF4A1CBCE073006F4283 /* UltravisualLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UltravisualLayout.swift; sourceTree = "<group>"; };
 		005BDF4C1CBD1B63006F4283 /* DancingScript-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DancingScript-Regular.otf"; sourceTree = "<group>"; };
+		005BDF4E1CBD2005006F4283 /* ProfileSettings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ProfileSettings.storyboard; sourceTree = "<group>"; };
+		005BDF511CBD2235006F4283 /* ProfileSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileSettingsViewController.swift; sourceTree = "<group>"; };
 		007335A21CBCBFAC00EDB1A8 /* StoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
 		007335A51CBCBFF400EDB1A8 /* CanvasViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasViewController.swift; sourceTree = "<group>"; };
 		007335A81CBCC01E00EDB1A8 /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +149,7 @@
 				00ECFD451CBB5550000C9D77 /* LaunchScreen.storyboard */,
 				00FFF3901CBC20AD00BD8665 /* TabBar.storyboard */,
 				00ECFD501CBB5668000C9D77 /* Initial.storyboard */,
+				005BDF4E1CBD2005006F4283 /* ProfileSettings.storyboard */,
 			);
 			name = "Storyboards & Xibs";
 			sourceTree = "<group>";
@@ -155,6 +160,14 @@
 				005BDF4A1CBCE073006F4283 /* UltravisualLayout.swift */,
 			);
 			name = Layouts;
+			sourceTree = "<group>";
+		};
+		005BDF501CBD221A006F4283 /* ProfileSettings */ = {
+			isa = PBXGroup;
+			children = (
+				005BDF511CBD2235006F4283 /* ProfileSettingsViewController.swift */,
+			);
+			name = ProfileSettings;
 			sourceTree = "<group>";
 		};
 		007335A11CBCBF9E00EDB1A8 /* Story */ = {
@@ -211,7 +224,6 @@
 			isa = PBXGroup;
 			children = (
 				005BDF491CBCE067006F4283 /* Layouts */,
-				005BDF441CBCD840006F4283 /* Storyboards & Xibs */,
 				005BDF431CBCD827006F4283 /* Supporting Files */,
 				005BDF421CBCD7FD006F4283 /* Others */,
 				005BDF411CBCD7E3006F4283 /* Assets */,
@@ -219,6 +231,7 @@
 				005BDF371CBCD6B4006F4283 /* Models */,
 				00EE6E851CBB8F740059699F /* Util */,
 				00ECFD541CBB5C04000C9D77 /* Extras */,
+				005BDF441CBCD840006F4283 /* Storyboards & Xibs */,
 				00ECFD4E1CBB562A000C9D77 /* Controllers */,
 			);
 			path = RoadYatri;
@@ -227,6 +240,7 @@
 		00ECFD4E1CBB562A000C9D77 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				005BDF501CBD221A006F4283 /* ProfileSettings */,
 				00FFF38F1CBC208400BD8665 /* TabBar */,
 				00EE6E801CBB869D0059699F /* Signup */,
 				00ECFD4F1CBB5645000C9D77 /* Initial */,
@@ -415,6 +429,7 @@
 				00EE6E7D1CBB718B0059699F /* SF-UI-Text-Medium.otf in Resources */,
 				00ECFD591CBB5DDE000C9D77 /* FiraSans-Light.otf in Resources */,
 				00EE6E821CBB86AF0059699F /* Signup.storyboard in Resources */,
+				005BDF4F1CBD2005006F4283 /* ProfileSettings.storyboard in Resources */,
 				00ECFD511CBB5668000C9D77 /* Initial.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -491,6 +506,7 @@
 				005BDF401CBCD790006F4283 /* UIImage+Decompression.swift in Sources */,
 				007335AE1CBCC0D700EDB1A8 /* ProfileViewController.swift in Sources */,
 				005BDF3B1CBCD6F8006F4283 /* Destination.swift in Sources */,
+				005BDF521CBD2235006F4283 /* ProfileSettingsViewController.swift in Sources */,
 				00ECFD3D1CBB5550000C9D77 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
