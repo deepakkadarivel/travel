@@ -11,6 +11,7 @@
         </mutableArray>
         <mutableArray key="FiraSans-Light.otf">
             <string>FiraSans-Light</string>
+            <string>FiraSans-Light</string>
         </mutableArray>
         <mutableArray key="FiraSans-Regular.otf">
             <string>FiraSans-Regular</string>
@@ -69,7 +70,40 @@
                     <view key="view" contentMode="scaleToFill" id="mL2-e1-dDz">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty_state" translatesAutoresizingMaskIntoConstraints="NO" id="TQS-Sk-bXc">
+                                <rect key="frame" x="175" y="114" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="87w-OB-pQ9"/>
+                                    <constraint firstAttribute="height" constant="250" id="LyG-X2-MQl"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Notifications yet" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="toS-Hu-Zll">
+                                <rect key="frame" x="8" y="384" width="584" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="8" id="IJB-Hy-kdS"/>
+                                    <constraint firstAttribute="width" constant="8" id="oQz-SM-xn5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="FiraSans-Light" family="Fira Sans" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="IJB-Hy-kdS"/>
+                                        <exclude reference="oQz-SM-xn5"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="toS-Hu-Zll" firstAttribute="top" secondItem="TQS-Sk-bXc" secondAttribute="bottom" constant="20" id="IlQ-z8-YXN"/>
+                            <constraint firstItem="TQS-Sk-bXc" firstAttribute="centerX" secondItem="mL2-e1-dDz" secondAttribute="centerX" id="PIv-2a-vo5"/>
+                            <constraint firstItem="TQS-Sk-bXc" firstAttribute="top" secondItem="PpT-ER-oBW" secondAttribute="bottom" constant="50" id="gaf-yQ-vEf"/>
+                            <constraint firstItem="toS-Hu-Zll" firstAttribute="centerX" secondItem="mL2-e1-dDz" secondAttribute="centerX" id="qhi-RW-gGh"/>
+                            <constraint firstAttribute="trailing" secondItem="toS-Hu-Zll" secondAttribute="trailing" constant="8" id="vEb-Ny-iwr"/>
+                            <constraint firstItem="toS-Hu-Zll" firstAttribute="leading" secondItem="mL2-e1-dDz" secondAttribute="leading" constant="8" id="wiY-Nc-GqK"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zeC-4W-Kbg"/>
                 </viewController>
@@ -442,6 +476,7 @@
     <resources>
         <image name="canvas" width="22" height="22"/>
         <image name="canvas_filled" width="50" height="50"/>
+        <image name="empty_state" width="560" height="410"/>
         <image name="home" width="50" height="50"/>
         <image name="home_filled" width="50" height="50"/>
         <image name="notification" width="50" height="50"/>

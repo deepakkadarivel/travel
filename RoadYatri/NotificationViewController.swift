@@ -19,15 +19,11 @@ class NotificationViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         
         // Navigationbar setup
-        
         let nav = self.navigationController?.navigationBar
         nav?.translucent = false
-        //        let img = UIImage()
-        //        self.navigationController?.navigationBar.shadowImage = img
-        //        self.navigationController?.navigationBar.setBackgroundImage(img, forBarMetrics: UIBarMetrics.Default)
         self.navigationController?.navigationBar.barTintColor = Colors.White
         self.navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Philosopher", size: 16)!, NSForegroundColorAttributeName: Colors.Black]
-//        self.navigationController?.navigationBar.topItem!.title = "NOTIFICATION"
+        self.navigationController?.navigationBar.topItem!.title = "NOTIFICATIONS"
     }
 
 }
