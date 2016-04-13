@@ -1,40 +1,48 @@
 //
-//  StoryViewController.swift
+//  StoryDetailViewController.swift
 //  RoadYatri
 //
-//  Created by Deepak Kadarivel on 12/04/16.
+//  Created by Deepak Kadarivel on 13/04/16.
 //  Copyright © 2016 upbeatios. All rights reserved.
 //
 
 import UIKit
 
-class StoryViewController: UIViewController {
+class StoryDetailViewController: UIViewController {
 
-    @IBOutlet weak var tableView: UITableView!
+    var story: Story!
     
-    let stories = Story.allStories()
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.tableView.rowHeight = 220
-        tableView.tableFooterView = UIView(frame: CGRectZero)
+        
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 350.0
     }
-
+    
     override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
         
         // Navigationbar setup
-        
         let nav = self.navigationController?.navigationBar
         nav?.translucent = false
         self.navigationController?.navigationBar.barTintColor = Colors.White
         self.navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Philosopher", size: 16)!, NSForegroundColorAttributeName: Colors.Black]
-        self.navigationController?.navigationBar.topItem!.title = "STORIES"
+        self.navigationController?.navigationBar.tintColor = Colors.Black
+        
+        let dismiss = UIImage(named: "back")
+        let dismissButton = UIBarButtonItem(image: dismiss, style: .Plain, target: self, action: #selector(DestinationDetailViewController.dismissMethod))
+        navigationItem.leftBarButtonItem = dismissButton
     }
-
+    
+    func dismissMethod() {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
 }
 
-extension StoryViewController: UITableViewDelegate, UITableViewDataSource {
+extension StoryDetailViewController: UITableViewDelegate, UITableViewDataSource {
     // MARK: - Table view data source
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -44,18 +52,16 @@ extension StoryViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 2
+        return 1
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         // Configure the cell...
-        let cell = tableView.dequeueReusableCellWithIdentifier("StoryCell", forIndexPath: indexPath) as! StoryTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("StoryDetailCell", forIndexPath: indexPath) as! StoryDetailTableViewCell
         cell.selectionStyle = UITableViewCellSelectionStyle.None
-        cell.story = stories[indexPath.row]
+        cell.set(story)
         return cell
     }
     
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        NavigationUtil.gotoStoryDetail(self, storyValue: stories[indexPath.row])
-    }
 }
+

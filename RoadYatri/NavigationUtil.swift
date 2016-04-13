@@ -48,4 +48,13 @@ class NavigationUtil {
         vc.presentViewController(navigationController, animated: true, completion: nil)
     }
     
+    static func gotoStoryDetail(vc: UIViewController, storyValue: Story) {
+        let storyboard : UIStoryboard = UIStoryboard(name: "StoriesDetail", bundle: nil)
+        let destination = storyboard.instantiateViewControllerWithIdentifier("StoryDetailVC") as! StoryDetailViewController
+        destination.story = storyValue
+        destination.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
+        let navigationController = UINavigationController(rootViewController: destination)
+        vc.presentViewController(navigationController, animated: true, completion: nil)
+    }
+    
 }
