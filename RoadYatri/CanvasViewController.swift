@@ -14,6 +14,8 @@ class CanvasViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(ProfileSettingsViewController.tap(_:)))
+        view.addGestureRecognizer(tapGesture)
     }
 
     override func viewDidAppear(animated: Bool) {
@@ -22,12 +24,18 @@ class CanvasViewController: UIViewController {
         
         let nav = self.navigationController?.navigationBar
         nav?.translucent = false
-        //        let img = UIImage()
-        //        self.navigationController?.navigationBar.shadowImage = img
-        //        self.navigationController?.navigationBar.setBackgroundImage(img, forBarMetrics: UIBarMetrics.Default)
         self.navigationController?.navigationBar.barTintColor = Colors.White
         self.navigationController!.navigationBar.titleTextAttributes = [ NSFontAttributeName: UIFont(name: "Philosopher", size: 16)!, NSForegroundColorAttributeName: Colors.Black]
-//        self.navigationController?.navigationBar.topItem!.title = "CANVAS"
+        self.navigationController?.navigationBar.topItem!.title = "CANVAS"
+    }
+    
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    func tap(gesture: UITapGestureRecognizer) {
+        self.view.resignFirstResponder()
+        self.view.endEditing(true)
     }
 
 }

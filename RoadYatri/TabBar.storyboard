@@ -192,7 +192,31 @@
                     <view key="view" contentMode="scaleToFill" id="Khx-JP-OdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty_state" translatesAutoresizingMaskIntoConstraints="NO" id="NWl-rA-Qrv">
+                                <rect key="frame" x="225" y="351" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="YXA-L6-vkl"/>
+                                    <constraint firstAttribute="height" constant="150" id="qcs-xn-vAS"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write your travel story..." textAlignment="justified" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="htQ-Rj-kLb">
+                                <rect key="frame" x="8" y="72" width="584" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="0fF-kV-AQ4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uUK-7L-4s2" firstAttribute="top" secondItem="NWl-rA-Qrv" secondAttribute="bottom" constant="50" id="9yC-vS-fLH"/>
+                            <constraint firstItem="NWl-rA-Qrv" firstAttribute="centerX" secondItem="Khx-JP-OdC" secondAttribute="centerX" id="BNW-Zt-qdA"/>
+                            <constraint firstItem="htQ-Rj-kLb" firstAttribute="leading" secondItem="Khx-JP-OdC" secondAttribute="leading" constant="8" id="JVk-0w-7Qu"/>
+                            <constraint firstAttribute="trailing" secondItem="htQ-Rj-kLb" secondAttribute="trailing" constant="8" id="aIO-u2-4hZ"/>
+                            <constraint firstItem="htQ-Rj-kLb" firstAttribute="top" secondItem="7UU-Jb-ITs" secondAttribute="bottom" constant="8" id="p2f-GH-Q5z"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="eUu-qw-oXH"/>
                 </viewController>
