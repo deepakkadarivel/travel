@@ -32,6 +32,9 @@
 		0098B2571CBE4D6A006EC904 /* DestinationDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0098B2561CBE4D6A006EC904 /* DestinationDetail.storyboard */; };
 		0098B25A1CBE4F59006EC904 /* DestinationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0098B2591CBE4F59006EC904 /* DestinationDetailViewController.swift */; };
 		0098B25C1CBE6399006EC904 /* DetailTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0098B25B1CBE6399006EC904 /* DetailTextTableViewCell.swift */; };
+		0098B2641CBE81EE006EC904 /* Stories.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0098B2631CBE81EE006EC904 /* Stories.plist */; };
+		0098B2661CBE82AF006EC904 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0098B2651CBE82AF006EC904 /* Story.swift */; };
+		0098B2681CBE82CB006EC904 /* StorySession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0098B2671CBE82CB006EC904 /* StorySession.swift */; };
 		00ECFD3D1CBB5550000C9D77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ECFD3C1CBB5550000C9D77 /* AppDelegate.swift */; };
 		00ECFD441CBB5550000C9D77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00ECFD431CBB5550000C9D77 /* Assets.xcassets */; };
 		00ECFD471CBB5550000C9D77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00ECFD451CBB5550000C9D77 /* LaunchScreen.storyboard */; };
@@ -79,6 +82,9 @@
 		0098B2561CBE4D6A006EC904 /* DestinationDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DestinationDetail.storyboard; sourceTree = "<group>"; };
 		0098B2591CBE4F59006EC904 /* DestinationDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationDetailViewController.swift; sourceTree = "<group>"; };
 		0098B25B1CBE6399006EC904 /* DetailTextTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTextTableViewCell.swift; sourceTree = "<group>"; };
+		0098B2631CBE81EE006EC904 /* Stories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Stories.plist; sourceTree = "<group>"; };
+		0098B2651CBE82AF006EC904 /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		0098B2671CBE82CB006EC904 /* StorySession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorySession.swift; sourceTree = "<group>"; };
 		00ECFD391CBB5550000C9D77 /* RoadYatri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoadYatri.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00ECFD3C1CBB5550000C9D77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00ECFD431CBB5550000C9D77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -121,6 +127,8 @@
 			children = (
 				005BDF381CBCD6C2006F4283 /* Session.swift */,
 				005BDF3A1CBCD6F8006F4283 /* Destination.swift */,
+				0098B2651CBE82AF006EC904 /* Story.swift */,
+				0098B2671CBE82CB006EC904 /* StorySession.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -142,6 +150,7 @@
 				005BDF471CBCDCD3006F4283 /* Destinations.xcassets */,
 				00ECFD431CBB5550000C9D77 /* Assets.xcassets */,
 				005BDF451CBCDB61006F4283 /* Destinations.plist */,
+				0098B2631CBE81EE006EC904 /* Stories.plist */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
@@ -473,6 +482,7 @@
 				00ECFD5B1CBB5E15000C9D77 /* FiraSans-Regular.otf in Resources */,
 				0098B2571CBE4D6A006EC904 /* DestinationDetail.storyboard in Resources */,
 				00ECFD441CBB5550000C9D77 /* Assets.xcassets in Resources */,
+				0098B2641CBE81EE006EC904 /* Stories.plist in Resources */,
 				005BDF461CBCDB61006F4283 /* Destinations.plist in Resources */,
 				00EE6E7D1CBB718B0059699F /* SF-UI-Text-Medium.otf in Resources */,
 				00ECFD591CBB5DDE000C9D77 /* FiraSans-Light.otf in Resources */,
@@ -537,6 +547,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0098B2681CBE82CB006EC904 /* StorySession.swift in Sources */,
 				0098B25C1CBE6399006EC904 /* DetailTextTableViewCell.swift in Sources */,
 				007335A61CBCBFF400EDB1A8 /* CanvasViewController.swift in Sources */,
 				007335A31CBCBFAC00EDB1A8 /* StoryViewController.swift in Sources */,
@@ -544,6 +555,7 @@
 				007335A91CBCC01E00EDB1A8 /* NotificationViewController.swift in Sources */,
 				005BDF551CBD2BCD006F4283 /* ProfileHeaderTableViewCell.swift in Sources */,
 				00EE6E7F1CBB7B780059699F /* UIViewExtension.swift in Sources */,
+				0098B2661CBE82AF006EC904 /* Story.swift in Sources */,
 				005BDF391CBCD6C2006F4283 /* Session.swift in Sources */,
 				005BDF4B1CBCE073006F4283 /* UltravisualLayout.swift in Sources */,
 				00EE6E841CBB86BD0059699F /* SignupViewController.swift in Sources */,

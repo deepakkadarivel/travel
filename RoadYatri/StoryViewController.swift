@@ -12,6 +12,8 @@ class StoryViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
+    let stories = Story.allStories()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -49,7 +51,7 @@ extension StoryViewController: UITableViewDelegate, UITableViewDataSource {
         // Configure the cell...
         let cell = tableView.dequeueReusableCellWithIdentifier("StoryCell", forIndexPath: indexPath) as! StoryTableViewCell
         cell.selectionStyle = UITableViewCellSelectionStyle.None
-        cell.setup(indexPath.row)
+        cell.story = stories[indexPath.row]
         return cell
     }
 }
