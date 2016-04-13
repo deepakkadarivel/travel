@@ -12,20 +12,23 @@ class Session {
     
     var title: String
     var subs: String
-    var backgroundImage: UIImage
+    var image: UIImage
+    var detail: String
     
-    init(title: String,  subs: String, backgroundImage: UIImage) {
+    init(title: String,  subs: String, image: UIImage, detail: String) {
         self.title = title
         self.subs = subs
-        self.backgroundImage = backgroundImage
+        self.image = image
+        self.detail = detail
     }
     
     convenience init(dictionary: NSDictionary) {
         let title = dictionary["Title"] as? String
         let subs = dictionary["Subs"] as? String
-        let backgroundName = dictionary["Background"] as? String
-        let backgroundImage = UIImage(named: backgroundName!)
-        self.init(title: title!, subs: subs!, backgroundImage: backgroundImage!.decompressedImage)
+        let imageName = dictionary["Image"] as? String
+        let detail = dictionary["Detail"] as? String
+        let image = UIImage(named: imageName!)
+        self.init(title: title!, subs: subs!, image: image!.decompressedImage, detail: detail!)
     }
     
 }

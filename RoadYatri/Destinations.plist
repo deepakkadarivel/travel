@@ -3,123 +3,241 @@
 <plist version="1.0">
 <array>
 	<dict>
+		<key>Detail</key>
+		<string>The magical allure of the Taj Mahal draws tourists to Agra like moths to a wondrous flame. And despite the hype, it’s every bit as good as you’ve heard. But the Taj is not a stand-alone attraction. The legacy of the Mughal empire has left a magnificent fort and a liberal sprinkling of fascinating tombs and mausoleums; and there’s also fun to be had in the bustling chowks (marketplaces).
+
+The downside comes in the form of hordes of rickshaw-wallahs, touts, unofficial guides and souvenir vendors, whose persistence can be infuriating at times.
+
+Many tourists choose to visit Agra on a whistle-stop day trip from Delhi. This is a shame. There is much more of interest here than can be seen in that time. In fact, you can enjoy several days’ sightseeing with side trips to the superb ruined city of Fatehpur Sikri and the Hindu pilgrimage centre of Mathura.
+
+Agra sits on a large bend in the holy Yamuna River. The fort and the Taj, 2km apart, both overlook the river on different parts of the bend. The main train and bus stations are a few kilometres southwest.
+
+The labourers and artisans who toiled on the Taj set up home immediately south of the mausoleum, creating the congested network of alleys known as Taj Ganj, now a popular area for budget travellers.</string>
 		<key>Title</key>
 		<string>Agra</string>
 		<key>Subs</key>
 		<string>is the majesty of the Taj</string>
-		<key>Background</key>
+		<key>Image</key>
 		<string>Inspiration-11</string>
 	</dict>
 	<dict>
+		<key>Detail</key>
+		<string>Indulgent houseboats, historic gardens, distinctive Kashmiri wooden mosques and a mild summer climate combine to make Srinagar one of India’s top domestic tourist attractions. Except, that is, when intercommunal tensions paralyse the city with strikes and shut-downs. Srinagar’s three main areas converge around Dalgate, where the southwestern nose of Dal Lake passes through a lock gate. Northwest lies the fascinatingly chaotic Old City. The busy commercial centre is southwest around Lal Chowk. The city’s greatest drawcard is mesmerisingly placid Dal Lake, which stretches a southwestern channel-spur towards the city centre, paralleled by the hotel-lined Boulevard. A bright array of houseboats here form a particularly colourful scene. The famous Mughal gardens are strung out over several kilometres around the lake.
+
+In 2014, the city was hit by devastating floods as the Jhelum River surged over its banks; repairs are ongoing but more floods were reported in 2015 so check the latest situation before you visit.</string>
 		<key>Title</key>
 		<string>Srinagar &amp; the Kashmir Valley</string>
 		<key>Subs</key>
 		<string>is the mirror to the mountains</string>
-		<key>Background</key>
+		<key>Image</key>
 		<string>Inspiration-03</string>
 	</dict>
 	<dict>
+		<key>Detail</key>
+		<string>A sliver of a coastal state in India&apos;s deep south, Kerala is shaped by its layered landscape: almost 600km of glorious Arabian Sea coast and beaches; a languid network of glistening backwaters; and the spice and tea-covered hills of the Western Ghats. Just setting foot on this swathe of soul-quenching, palm-shaded green will slow your subcontinental stride to a blissed-out amble. Kerala is a world away from the frenzy of elsewhere, as if India had passed through the Looking Glass and become an altogether more laid-back place.
+
+Besides its famous backwaters, elegant houseboats, ayurvedic treatments and delicately spiced, taste-bud-tingling cuisine, Kerala is home to wild elephants, exotic birds and the odd tiger, while vibrant traditions such as Kathakali plays, temple festivals and snake-boat races frequently bring even the smallest villages to life. It&apos;s hard to deny Kerala&apos;s liberal use of the slogan &apos;God&apos;s Own Country&apos;.</string>
 		<key>Title</key>
 		<string>Kerala</string>
 		<key>Subs</key>
 		<string>is a tropical symphony</string>
-		<key>Background</key>
+		<key>Image</key>
 		<string>Inspiration-05</string>
 	</dict>
 	<dict>
+		<key>Detail</key>
+		<string>Unreal and bewitching, the forlorn ruins of Hampi dot an unearthly landscape that will leave you spellbound the moment you cast your eyes on it. Heaps of giant boulders perch precariously over miles of undulating terrain, their rusty hues offset by jade-green palm groves, banana plantations and paddy fields. While it’s possible to see the ancient ruins and temples of this World Heritage Site in a day or two, this goes against Hampi’s relaxed grain. Plan on lingering for a while.
+
+The main travellers’ ghetto has traditionally been Hampi Bazaar, a village crammed with budget lodges, shops and restaurants, and towered over by the majestic Virupaksha Temple. However, recent demolitions have seen tranquil Virupapur Gaddi across the river become the new hang out. Both offer different experiences, and recommendable to spend a few nights at each.
+
+Hampi is generally a safe, peaceful place, but don’t wander around the ruins after dark or alone, as it can be dangerous terrain to get lost in, especially at night.</string>
 		<key>Title</key>
 		<string>Hampi</string>
 		<key>Subs</key>
 		<string>is a fantasy world of rocks and ruins</string>
-		<key>Background</key>
+		<key>Image</key>
 		<string>Inspiration-06</string>
 	</dict>
 	<dict>
+		<key>Detail</key>
+		<string>Ooty may be a bit hectic for some tastes, and the town centre is an ugly mess, but it doesn&apos;t take long to get up into the quieter, greener areas where tall pines rise above what could almost be English country lanes. Ooty, &apos;the Queen of Hill Stations&apos;, mixes up Indian bustle and Hindu temples with lovely parks and gardens and charming Raj-era bungalows, the latter providing its most atmospheric (and most expensive) places to stay.
+
+The town was established by the British in the early 19th century as the summer headquarters of the Madras government, and memorably nicknamed ‘Snooty Ooty’. Development ploughed through a few decades ago, but somehow old Ooty survives. You just have to walk a bit further out to find it.
+
+The journey up here on the celebrated miniature train is romantic and the scenery stunning. Even the road up from the plains is impressive. From April to June (the very busy &apos;season&apos;) Ooty is a welcome relief from the hot plains, and in the colder months (October to March) you’ll need warm clothing, which you can buy cheap here, as overnight temperatures occasionally drop to 0°C.
+The train and bus stations are at the west end of Ooty&apos;s racecourse, in almost the lowest part of town. To their west is the lake, while the streets of the town snake upwards all around. From the bus station it’s a 20-minute walk to Ooty’s commercial centre, Charing Cross. Like Kodaikanal, Ooty has an international school whose students can be seen around town.</string>
 		<key>Title</key>
 		<string>Ooty</string>
 		<key>Subs</key>
 		<string>Udhagamandalam</string>
-		<key>Background</key>
+		<key>Image</key>
 		<string>Inspiration-07</string>
 	</dict>
 	<dict>
+		<key>Detail</key>
+		<string>There are few more refreshing Tamil Nadu moments than boarding a bus in the heat-soaked plains and disembarking in the sharp pinch of a Kodaikanal night or morning. This misty hill station, 120km northwest of Madurai in the Palani hills, is more relaxed and intimate than its big sister Ooty (Kodai is the ‘Princess of Hill Stations’, while Ooty is the Queen). It’s not all cold either; during the day the weather can be more like deep spring than early winter. The renowned Kodaikanal International School provides a bit of cosmopolitan flair, with students from around the globe.
+
+Centred on a beautiful lake, Kodai rambles up and down hillsides with patches of shola forest, unique to the Western Ghats in South India, and evergreen broadleaf trees like magnolia, mahogany, myrtle and rhododendron. Another of its plant specialities is the kurinji shrub, whose lilac-blue blossoms appear only every 12 years: next due 2018.
+
+Kodai is popular with honeymooners and groups, who flock to the spectacular viewoints and waterfalls in and around town.</string>
 		<key>Title</key>
 		<string>Kodaikanal</string>
 		<key>Subs</key>
 		<string>Kodai is the ‘Princess of Hill Stations’</string>
-		<key>Background</key>
+		<key>Image</key>
 		<string>Inspiration-08</string>
 	</dict>
 	<dict>
+		<key>Detail</key>
+		<string>Superbly set in a remote river valley 105km northeast of Aurangabad, the remarkable cave temples of Ajanta are this region’s second World Heritage Site. Much older than Ellora, these secluded caves date from around the 2nd century BC to the 6th century AD and were among the earliest monastic institutions to be constructed in the country. Ironically, it was Ellora’s rise that brought about Ajanta’s downfall, and historians believe the site was abandoned once the focus had shifted to Ellora.
+
+Ajanta was deserted for about a millenium, as the Deccan forest claimed and shielded the caves, with roots and shoots choking the sculptures, until 1819, when a British hunting party led by officer John Smith stumbled upon them purely by chance.
+
+One of the primary reasons to visit Ajanta is to admire its renowned ‘frescoes’, actually temperas, which adorn many of the caves’ interiors. With few other examples from ancient times matching their artistic excellence and fine execution, these paintings are of unfathomable heritage value. It’s believed that the natural pigments for these paintings were mixed with animal glue and vegetable gum, to bind them to the dry surface. Many caves have small, craterlike holes in their floors, which acted as palettes during paint jobs.
+
+Despite their age, the paintings in most caves remain finely preserved today, and many attribute it to their relative isolation from humanity for centuries. However, it would be a tad optimistic to say that decay hasn’t set in.</string>
 		<key>Title</key>
 		<string>Ajanta</string>
 		<key>Subs</key>
 		<string>UNESCO World Heritage Site</string>
-		<key>Background</key>
+		<key>Image</key>
 		<string>Inspiration-09</string>
 	</dict>
 	<dict>
+		<key>Detail</key>
+		<string>Give a man a hammer and chisel, and he’ll create art for posterity. Come to the World Heritage Site Ellora cave temples, located 30km from Aurangabad, and you’ll know exactly what we mean. The epitome of ancient Indian rock-cut architecture, these caves were chipped out laboriously over five centuries by generations of Buddhist, Hindu and Jain monks. Monasteries, chapels, temples – the caves served every purpose, and they were stylishly embellished with a profusion of remarkably detailed sculptures. Unlike the caves at Ajanta, which are carved into a sheer rock face, the Ellora caves line a 2km-long escarpment, the gentle slope of which allowed architects to build elaborate courtyards in front of the shrines, and render them with sculptures of a surreal quality.
+
+Ellora has 34 caves in all: 12 Buddhist (AD 600–800), 17 Hindu (AD 600–900) and five Jain (AD 800–1000) – though the exact time scales of these caves’ construction is the subject of academic debate. Undoubtedly the grandest is the awesome Kailasa Temple (Cave 16), the world’s largest monolithic sculpture, hewn top to bottom against a rocky slope by 7000 labourers over a period of 150 years. Dedicated to Lord Shiva, it is clearly among the best that ancient Indian architecture has to offer.
+
+The established academic theory is that the site represents the renaissance of Hinduism under the Chalukya and Rashtrakuta dynasties, the subsequent decline of Indian Buddhism and a brief resurgence of Jainism under official patronage. However, due to the absence of inscriptional evidence, it’s been impossible to accurately date most of Ellora’s monuments. Some scholars argue that some Hindu temples predate those in the Buddhist group. What is certain is that their coexistence at one site indicates a lengthy period of religious tolerance.
+
+Official guides can be hired at the ticket office in front of the Kailasa Temple for ₹1070 (up to five people). Guides have an extensive knowledge of cave architecture so are worth the investment. If your tight itinerary forces you to choose between Ellora or Ajanta, Ellora wins hands down it terms of architecture (though Ajanta’s setting is more beautiful and more of a pleasure to explore).
+
+Ellora is very popular with domestic tourists; if you can visit on a weekday, it’s far less crowded. The whole complex is in desperate need of a reorganising: currently the car park is far too close to the temples so expect plenty of background honking and beeping as you tour the caves. Trash is also a big problem.</string>
 		<key>Title</key>
 		<string>Ellora</string>
 		<key>Subs</key>
 		<string>UNESCO World Heritage Site</string>
-		<key>Background</key>
+		<key>Image</key>
 		<string>Inspiration-10</string>
 	</dict>
 	<dict>
+		<key>Detail</key>
+		<string>The rolling hills around Munnar, South India&apos;s largest tea-growing region, are carpeted in emerald-green tea plantations, contoured, clipped and sculpted like ornamental hedges. The low mountain scenery is magnificent – you’re often up above the clouds watching veils of mist clinging to the mountaintops. Munnar town itself is a scruffy administration centre, not unlike a North Indian hill station, but wander just a few kilometres out of town and you’ll be engulfed in a sea of a thousand shades of green.
+
+Once known as the High Range of Travancore, today Munnar is the commercial centre of some of the world’s highest tea-growing estates. The majority of the plantations are operated by corporate giant Tata, with some in the hands of local co-operative Kannan Devan Hills Plantation Company (KDHP).</string>
 		<key>Title</key>
 		<string>Munnar</string>
 		<key>Subs</key>
 		<string>South India&apos;s largest tea-growing region</string>
-		<key>Background</key>
+		<key>Image</key>
 		<string>Inspiration-02</string>
 	</dict>
 	<dict>
+		<key>Detail</key>
+		<string>Pint-sized Goa is more than beaches and trance parties. A kaleidoscopic blend of Indian and Portuguese cultures, sweetened with sun, sea, sand, seafood and spirituality, there&apos;s nowhere in India quite like it.
+Beach Bounty
+Goa’s biggest draw is undoubtedly its virtually uninterrupted string of golden-sand beaches. This shimmering strand of sand stretches along the Arabian Sea from the tip to the toe of the state, and each of the various beaches have developed their own personalities and reputations since the hippie days of the sixties. They cater to every tropical whim: choose from backpacker Arambol or bolder, brasher Baga; from the palm-fringed sands of Palolem to hippie market bliss at Anjuna or lovely, laid-back Mandrem; from expansive groomed sands in front of fancy five-star resorts or hidden crescent coves, where the only footprints will be the scuttling crabs and your own.
+
+Cultural Crockpot
+Both Goa and Mumbai stand out in India for their extraordinary colonial architecture and heritage. Mumbai&apos;s British legacy of gaudy Gothic and Indo-Saracenic buildings is an architectural feast not to be missed. The Portuguese arrived in Goa in 1510, lured by the exotic East and the promise of lucrative spice routes. Their indelible mark is still evident in the state’s baroque architecture, whitewashed churches, crumbling forts, colourful Catholic ceremonies, mournful fado music and the stunning cathedrals of Old Goa.
+
+Spiritual Sanctuary
+Want to top up your Zen as well as your tan? Welcome to winter in Goa where yoga is king and the crop of spiritual activities grows more bountiful each year: sunrise t’ai chi sessions, reiki healing courses, meditation and just about every other form of spiritual exploration are practised freely. Many travellers come here for a serious yoga experience and you&apos;ll find everything from drop-in classes to teaching training courses and spiritual retreats.
+
+The Spice of Life
+Food is enjoyed fully in Goa and Mumbai, as it is throughout India. The scents, spices and flavours of Goa’s cuisine will surprise and tantalise even seasoned travellers: whether it&apos;s a classic fish curry rice, a morning bhali-pau (bread roll dipped in curry), a piquant vindaloo, with its infusions of wine vinegar and garlic, or a spicy xacuti sauce, the Indo-Portuguese influence is a treat for the tastebuds. While you&apos;re here, visit a back-country spice farm to learn why the Portuguese were so excited about Goa.
+
+Why I Love Goa
+By Paul Harding, Writer
+
+My first visit to Goa, in the late &apos;90s, was also my first visit to India. After travelling overland from Delhi through central India and Mumbai, Goa – with its beaches, all-night parties and laid-back tropical vibe – was a blissful surprise. I&apos;ve been back numerous times and while some things may have changed, the essence remains the same. I love hanging around by the beach, cruising through impossibly green countryside on two wheels, and the evening ritual of watching the sun melt into the Arabian Sea with a cold beer and a plate of spicy prawns. And I love the Goan people – hard-working, optimistic, quick with a smile and always happy to chat.</string>
 		<key>Title</key>
 		<string>Goa</string>
 		<key>Subs</key>
 		<string>is sun, sand and spices</string>
-		<key>Background</key>
+		<key>Image</key>
 		<string>Inspiration-12</string>
 	</dict>
 	<dict>
+		<key>Detail</key>
+		<string>Comprising a string of 36 palm-covered, white-sand-skirted coral islands 300km off the coast of Kerala, Lakshadweep is as stunning as it is isolated. Only 10 of these islands are inhabited, mostly by Sunni Muslim fishermen, and foreigners are only allowed to stay on a few of these. With fishing and coir production the main sources of income, local life on the islands remains highly traditional, and a caste system divides the islanders between Koya (land owners), Malmi (sailors) and Melachery (farmers).
+
+The real attraction of the islands lies under the water: the 4200 sq km of pristine archipelago lagoons, unspoiled coral reefs and warm waters are a magnet for flipper-toting travellers and divers alike.
+
+Lakshadweep can only be visited on a prearranged package trip. At the time of research, resorts on Kadmat, Minicoy, Kavaratti, Agatti and Bangaram islands were open to tourists – though most visits to the islands are boat-based packages which include a cruise from Kochi, island visits, watersports, diving and nights spent on board the boat. Packages include permits and meals, and can be arranged though SPORTS.</string>
 		<key>Title</key>
 		<string>Lakshadweep</string>
 		<key>Subs</key>
 		<string>white-sand-skirted coral islands</string>
-		<key>Background</key>
+		<key>Image</key>
 		<string>Inspiration-01</string>
 	</dict>
 	<dict>
+		<key>Detail</key>
+		<string>Rajasthan, Delhi and Agra are the jewels in India&apos;s crown. From fairy-tale palaces and epic forts to dizzying festivals and wildlife encounters, this is India at its unbeatable Bollywood best.
+
+Why I Love Rajasthan, Delhi &amp; Agra
+By Paul Clammer, Writer
+
+Is there any better way to see Rajasthan unfold before you than through India’s railways – tucked up in your berth and watching village life pass through the window, refreshed by the chai-wallah that passes through the carriage with an urn of sweet steaming tea? And when you arrive at your destination, you&apos;ll tumble through the backstreets by autorickshaw to the real magic – astounding fortresses and palaces, camel safaris and elephant rides. This is the India of the imagination made real. Noise, spice, heat and colour: what’s not to love?
+
+Land of Kings
+Rajasthan is literally the Land of the Kings. It is home to the chivalrous Rajputs, and its battle-scarred heritage has bestowed legacies of pride and tradition. The upper echelons of this medieval society built magnificent palaces and forts, many of which are now glorious hotels and museums. In addition, stunning handicrafts and fine arts were developed and nurtured through patronage of the maharajas. Village life remains steeped in tradition but, just like the rest of India, the pace of change is ever accelerating. Turbaned men still barter for decorated camels – they just relay the successful deal home via a smart phone.
+
+The Golden Triangle
+The famous Golden Triangle is a traveller’s survey of Indian icons. It starts at the daunting mega-metropolis of Delhi with its majestic Mughal heritage, and then directs you to Agra, where one of the world’s most famous tombs, the Taj Mahal, defines a city. The third apex is Jaipur – a city painted pink with the Palace of the Winds and some of the most colourful bazaars in India. Jaipur is the gateway to Rajasthan, one of India&apos;s major drawcards; once you&apos;ve stepped into a palace, stared up at a fort or swayed on the back of one of its camels, you&apos;ll readily understand why.
+
+Land of Colour
+The colours of this region are impossible to ignore and the effect of emerald green, canary yellow and fire-engine red turbans and saris is simply dazzling. The lucky might even see a flash of orange while tiger-spotting in Ranthambhore National Park. Easier to collect are the bright hues of Rajasthan&apos;s many festivals, from brightly decorated mounts at the camel and elephant festivals in Pushkar and Jaipur respectively, to the colourful explosions of Diwali and Holi, celebrated across the region.
+
+Magnificent Monuments
+Most travellers to this region will arrive by air in the nation’s capital. Delhi is an overwhelming, bursting-at-the-seams city that still manages to charm visitors with its magnificent heritage and heady cocktail of old Mughal architecture and the new of an India striding into the 21st century. A short train journey to the south, the Taj Mahal lives up to its hype with its perfect proportions and marble tones. In Rajasthan, it&apos;s the forts that grab you, from Jaisalmer&apos;s fairy-tale desert outpost, to the grandeur of Mehrangarh, which overlooks Jodhpur from its imposing hill-top setting.</string>
 		<key>Title</key>
 		<string>Rajasthan</string>
 		<key>Subs</key>
 		<string>is a ride on the sands of time</string>
-		<key>Background</key>
+		<key>Image</key>
 		<string>Inspiration-13</string>
 	</dict>
 	<dict>
+		<key>Detail</key>
+		<string>Far from the earthquake epicenter, and almost unaffected by the disaster, Pokhara ticks all the right boxes, with spectacular scenery, adventure activities, and accommodation and food choices galore. Whether you’ve returned from a three-week trek or endured a bus trip from hell, Lakeside Pokhara is the perfect place to recharge your batteries.
+
+The scene is a chilled-out version of Thamel, stretching along the shore of a tranquil lake with bobbing paddle boats. From the lake, and possibly even from your hotel bed, you can enjoy a clear view of the snow-capped mountains, just twenty or so kilometres away.
+
+There’s much more to Pokhara than its laid-back charm. It also boasts a booming adventure sports industry; it is arguably the best paragliding venue on the globe and is surrounded by white-water rivers. There&apos;s a fascinating museum dedicated to the world-famous Gurkha soldier. And last but not least, it’s the gateway to the world-famous treks in and around the Annapurna range and beyond.</string>
 		<key>Title</key>
 		<string>Pokhara</string>
 		<key>Subs</key>
 		<string>is a mirror to the Himalaya</string>
-		<key>Background</key>
+		<key>Image</key>
 		<string>Inspiration-14</string>
 	</dict>
 	<dict>
+		<key>Detail</key>
+		<string>J&amp;K combines three incredibly different worlds into one state. Hindu Jammu, the state&apos;s major railhead, is a busy hub for domestic pilgrims. Muslim Kashmir is India&apos;s Switzerland, attracting hoards of local tourists seeking cool summer air, alpine scenery and Srinagar’s romantic houseboat accommodation. For most foreigners, J&amp;K’s greatest attraction is the Himalayan land of Ladakh, whose disarmingly friendly, ethno-linguistically Tibetan people are predominantly Buddhist. Their timeless monasteries are set between arid canyons and soaring peaks with emerald-green villages nestled photogenically in highland deserts.
+
+While relatively calm of late, beware that Kashmir is politically volatile and arguments over its status caused three 20th-century wars. Ladakh is altogether different, a meditatively calm world, where the main concern is giving yourself ample time for high-altitude acclimatisation. Note that Ladakh is inaccessible by road outside the summer season.</string>
 		<key>Title</key>
 		<string>Ladakh</string>
 		<key>Subs</key>
 		<string>Bounded by the Karakoram and Himalayan mountains</string>
-		<key>Background</key>
+		<key>Image</key>
 		<string>Inspiration-15</string>
 	</dict>
 	<dict>
+		<key>Detail</key>
+		<string>One of Myanmar’s main attractions, this is a temple town. The area known as Bagan or, bureaucratically, as the ‘Bagan Archaeological Zone’, occupies an impressive 26-sq-mile area, 118 miles south of Mandalay and 429 miles north of Yangon. The Ayeyarwady River drifts past its northern and western sides.
+
+The area’s most active town and main transport hub is Nyaung U, in the northeast corner. About 2.5 miles west, Old Bagan is the former site of the village that was relocated two miles south to New Bagan in 1990. Between the two is Myinkaba, a village boasting a long-running lacquerware tradition. One thing to keep in mind, particularly for travellers exploring the region, is that Bagan is most definitely not Siem Reap or even Luang Prabang. It&apos;s more of an overgrown village and lacks anything resembling a night scene, although it does have basic traveller amenities. Plan your partying somewhere else.
+
+Connecting the towns are paved roads making a 12-mile oval. In between and around these towns is the bulk of the Bagan action: the plain, featuring most of the temples, all connected with a vast network of bumpy dirt roads and trails.</string>
 		<key>Title</key>
 		<string>Bagan</string>
 		<key>Subs</key>
 		<string>One of Myanmar’s main attractions</string>
-		<key>Background</key>
+		<key>Image</key>
 		<string>Inspiration-16</string>
 	</dict>
 </array>

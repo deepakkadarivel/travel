@@ -39,4 +39,13 @@ class NavigationUtil {
         vc.presentViewController(navigationController, animated: true, completion: nil)
     }
     
+    static func gotoDestinationDetail(vc: UIViewController, destinationValue: Destination) {
+        let storyboard : UIStoryboard = UIStoryboard(name: "DestinationDetail", bundle: nil)
+        let destination = storyboard.instantiateViewControllerWithIdentifier("DestinationDetailVC") as! DestinationDetailViewController
+        destination.destination = destinationValue
+        destination.modalTransitionStyle = UIModalTransitionStyle.CrossDissolve
+        let navigationController = UINavigationController(rootViewController: destination)
+        vc.presentViewController(navigationController, animated: true, completion: nil)
+    }
+    
 }

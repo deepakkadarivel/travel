@@ -25,6 +25,7 @@ class HomeViewController: UIViewController {
 
     }
     
+    
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
@@ -55,6 +56,10 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(cellIdentifier, forIndexPath: indexPath) as! TimelineCollectionViewCell
         cell.destination = destinations[indexPath.item]
         return cell
+    }
+    
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        NavigationUtil.gotoDestinationDetail(self, destinationValue: destinations[indexPath.row])
     }
 
 }

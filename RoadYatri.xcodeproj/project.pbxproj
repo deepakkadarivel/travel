@@ -29,6 +29,9 @@
 		007335A91CBCC01E00EDB1A8 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007335A81CBCC01E00EDB1A8 /* NotificationViewController.swift */; };
 		007335AE1CBCC0D700EDB1A8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007335AD1CBCC0D700EDB1A8 /* ProfileViewController.swift */; };
 		007335B21CBCCBF200EDB1A8 /* TimelineCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007335B11CBCCBF200EDB1A8 /* TimelineCollectionViewCell.swift */; };
+		0098B2571CBE4D6A006EC904 /* DestinationDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0098B2561CBE4D6A006EC904 /* DestinationDetail.storyboard */; };
+		0098B25A1CBE4F59006EC904 /* DestinationDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0098B2591CBE4F59006EC904 /* DestinationDetailViewController.swift */; };
+		0098B25C1CBE6399006EC904 /* DetailTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0098B25B1CBE6399006EC904 /* DetailTextTableViewCell.swift */; };
 		00ECFD3D1CBB5550000C9D77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ECFD3C1CBB5550000C9D77 /* AppDelegate.swift */; };
 		00ECFD441CBB5550000C9D77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00ECFD431CBB5550000C9D77 /* Assets.xcassets */; };
 		00ECFD471CBB5550000C9D77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00ECFD451CBB5550000C9D77 /* LaunchScreen.storyboard */; };
@@ -73,6 +76,9 @@
 		007335A81CBCC01E00EDB1A8 /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		007335AD1CBCC0D700EDB1A8 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		007335B11CBCCBF200EDB1A8 /* TimelineCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineCollectionViewCell.swift; sourceTree = "<group>"; };
+		0098B2561CBE4D6A006EC904 /* DestinationDetail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DestinationDetail.storyboard; sourceTree = "<group>"; };
+		0098B2591CBE4F59006EC904 /* DestinationDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestinationDetailViewController.swift; sourceTree = "<group>"; };
+		0098B25B1CBE6399006EC904 /* DetailTextTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTextTableViewCell.swift; sourceTree = "<group>"; };
 		00ECFD391CBB5550000C9D77 /* RoadYatri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoadYatri.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00ECFD3C1CBB5550000C9D77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00ECFD431CBB5550000C9D77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -164,6 +170,7 @@
 				00FFF3901CBC20AD00BD8665 /* TabBar.storyboard */,
 				00ECFD501CBB5668000C9D77 /* Initial.storyboard */,
 				005BDF4E1CBD2005006F4283 /* ProfileSettings.storyboard */,
+				0098B2561CBE4D6A006EC904 /* DestinationDetail.storyboard */,
 			);
 			name = "Storyboards & Xibs";
 			sourceTree = "<group>";
@@ -193,6 +200,7 @@
 				001E06FA1CBD544700ADCF41 /* SettingsGeneralTableViewCell.swift */,
 				001E06FC1CBD545500ADCF41 /* SettingsNotificationTableViewCell.swift */,
 				001E07001CBD78D500ADCF41 /* StoryTableViewCell.swift */,
+				0098B25B1CBE6399006EC904 /* DetailTextTableViewCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -227,6 +235,14 @@
 				007335AD1CBCC0D700EDB1A8 /* ProfileViewController.swift */,
 			);
 			name = Profile;
+			sourceTree = "<group>";
+		};
+		0098B2581CBE4F3B006EC904 /* DestinationDetail */ = {
+			isa = PBXGroup;
+			children = (
+				0098B2591CBE4F59006EC904 /* DestinationDetailViewController.swift */,
+			);
+			name = DestinationDetail;
 			sourceTree = "<group>";
 		};
 		00ECFD301CBB5550000C9D77 = {
@@ -268,6 +284,7 @@
 		00ECFD4E1CBB562A000C9D77 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0098B2581CBE4F3B006EC904 /* DestinationDetail */,
 				005BDF501CBD221A006F4283 /* ProfileSettings */,
 				00FFF38F1CBC208400BD8665 /* TabBar */,
 				00EE6E801CBB869D0059699F /* Signup */,
@@ -454,6 +471,7 @@
 				00EE6E7B1CBB715C0059699F /* SF-UI-Text-Regular.otf in Resources */,
 				005BDF481CBCDCD3006F4283 /* Destinations.xcassets in Resources */,
 				00ECFD5B1CBB5E15000C9D77 /* FiraSans-Regular.otf in Resources */,
+				0098B2571CBE4D6A006EC904 /* DestinationDetail.storyboard in Resources */,
 				00ECFD441CBB5550000C9D77 /* Assets.xcassets in Resources */,
 				005BDF461CBCDB61006F4283 /* Destinations.plist in Resources */,
 				00EE6E7D1CBB718B0059699F /* SF-UI-Text-Medium.otf in Resources */,
@@ -519,6 +537,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0098B25C1CBE6399006EC904 /* DetailTextTableViewCell.swift in Sources */,
 				007335A61CBCBFF400EDB1A8 /* CanvasViewController.swift in Sources */,
 				007335A31CBCBFAC00EDB1A8 /* StoryViewController.swift in Sources */,
 				007335B21CBCCBF200EDB1A8 /* TimelineCollectionViewCell.swift in Sources */,
@@ -533,6 +552,7 @@
 				00ECFD5E1CBB612E000C9D77 /* Colors.swift in Sources */,
 				00ECFD651CBB6652000C9D77 /* UILabelExtension.swift in Sources */,
 				001E06FD1CBD545500ADCF41 /* SettingsNotificationTableViewCell.swift in Sources */,
+				0098B25A1CBE4F59006EC904 /* DestinationDetailViewController.swift in Sources */,
 				001E07011CBD78D500ADCF41 /* StoryTableViewCell.swift in Sources */,
 				00FFF3941CBC29CE00BD8665 /* HomeViewController.swift in Sources */,
 				00EE6E881CBB8FAF0059699F /* NavigationUtil.swift in Sources */,

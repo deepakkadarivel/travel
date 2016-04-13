@@ -18,7 +18,7 @@ class TimelineCollectionViewCell: UICollectionViewCell {
     var destination: Destination? {
         didSet {
             if let destination = destination {
-                imageView.image = destination.backgroundImage
+                imageView.image = destination.image
                 titleLabel.text = destination.title
                 timeAndRoomLabel.text = destination.subs
             }
